@@ -1,0 +1,63 @@
+Starting audit...
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:13: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:14: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:17: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:18: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:20: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:23: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:24:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:24:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:25:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:28: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:29:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:30:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:44: Expected @return tag. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:51: Expected @return tag. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:58:21: Parameter item should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:58:26: Expected @param tag for 'item'. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:69: Expected @return tag. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:70: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:74: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:75:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:77: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:77:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:78: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:78:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:80:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:81: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:83: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 28 errors.
+Starting audit...
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:33:15: Parameter scan should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:40:13: 'e' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:72:25: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:72:29: 'v' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:72:32: Parameter w should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:89:34: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:89:38: 'v' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:101:28: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:101:32: 'v' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:101:35: Parameter w should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 11 errors.
+Starting audit...
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphMatrix.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphMatrix.java:34:17: Parameter scan should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphMatrix.java:52:25: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphMatrix.java:52:29: 'v' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphMatrix.java:52:32: Parameter w should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphMatrix.java:70:28: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphMatrix.java:70:32: 'v' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphMatrix.java:70:35: Parameter w should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphMatrix.java:80: Expected @return tag. [JavadocMethod]
+Audit done.
+Checkstyle ends with 9 errors.
+Starting audit...
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Solution.java:5:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Solution.java:9: Class Solution should be declared as final. [FinalClass]
+Audit done.
+Checkstyle ends with 3 errors.

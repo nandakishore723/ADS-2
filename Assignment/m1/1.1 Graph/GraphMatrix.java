@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for graph matrix.
  */
@@ -31,7 +30,7 @@ class GraphMatrix {
      *
      * @param      scan  The scan
      */
-    GraphMatrix(Scanner scan) {
+    GraphMatrix(final Scanner scan) {
         this.v = Integer.parseInt(scan.nextLine());
         matrix = new int[v][v];
         int edge = Integer.parseInt(scan.nextLine());

@@ -45,14 +45,14 @@ class GraphMatrix {
     /**
      * Adds an edge.
      *
-     * @param      v    the int.
+     * @param      v1    the int.
      * @param      w    the int.
      */
-    public void addEdge(final int v, final int w) {
-        if (v != w) {
-            if (!hasEdge(v, w)) {
-                matrix[v][w] = 1;
-                matrix[w][v] = 1;
+    public void addEdge(final int v1, final int w) {
+        if (v1 != w) {
+            if (!hasEdge(v1, w)) {
+                matrix[v1][w] = 1;
+                matrix[w][v1] = 1;
                 e++;
             }
         }
@@ -61,13 +61,13 @@ class GraphMatrix {
     /**
      * Determines if it has edge.
      *
-     * @param      v    the int.
+     * @param      v1    the int.
      * @param      w    the int.
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
-        if (matrix[v][w] == 1) {
+    public boolean hasEdge(final int v1, final int w) {
+        if (matrix[v1][w] == 1) {
             return true;
         }
         return false;

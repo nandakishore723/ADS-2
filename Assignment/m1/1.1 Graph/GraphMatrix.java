@@ -48,7 +48,7 @@ class GraphMatrix {
      * @param      v    the int.
      * @param      w    the int.
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         if (v != w) {
             if (!hasEdge(v, w)) {
                 matrix[v][w] = 1;

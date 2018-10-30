@@ -48,6 +48,8 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Is the BAG empty?
+      *
+      * @return     True if empty, False otherwise.
       */
     public boolean isEmpty() {
         return first == null;
@@ -55,6 +57,8 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Return the number of items in the bag.
+      *
+      * @return     { description_of_the_return_value }.
       */
     public int size() {
         return N;

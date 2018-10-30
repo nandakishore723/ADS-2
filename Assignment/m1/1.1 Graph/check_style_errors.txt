@@ -1,19 +1,17 @@
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:21:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:52: Expected @return tag. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:59: Expected @return tag. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:66:32: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:77: Expected @return tag. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:82: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:83:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:85:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:86:31: '{' at column 31 should have line break after. [LeftCurly]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:88:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:89: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:89:65: Avoid nested blocks. [AvoidNestedBlocks]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:70:32: Expected @param tag for 'item'. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:81: Expected @return tag. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:86: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:87:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:89:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:90:31: '{' at column 31 should have line break after. [LeftCurly]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:92:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:93: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:93:65: Avoid nested blocks. [AvoidNestedBlocks]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.
 Starting audit...

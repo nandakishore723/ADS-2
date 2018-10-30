@@ -18,7 +18,9 @@ public class Bag<Item> implements Iterable<Item> {
     private int N;         // number of elements in bag
     private Node first;    // beginning of bag
 
+    //
     // helper linked list class
+    //
     private class Node {
         private Item item;
         private Node next;

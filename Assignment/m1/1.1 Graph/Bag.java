@@ -18,11 +18,17 @@ public class Bag<Item> implements Iterable<Item> {
     private int N;         // number of elements in bag
     private Node first;    // beginning of bag
 
-    //
-    // helper linked list class
-    //
+    /**
+     * Class for node.
+     */
     private class Node {
+        /**
+         * { var_description }.
+         */
         private Item item;
+        /**
+         * { var_description }.
+         */
         private Node next;
     }
 

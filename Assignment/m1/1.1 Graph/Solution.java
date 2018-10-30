@@ -2,11 +2,10 @@ import java.util.Scanner;
 /**
  * @author : nandakishore723
  */
-import java.util.Arrays;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */

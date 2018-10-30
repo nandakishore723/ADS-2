@@ -75,6 +75,8 @@ class GraphMatrix {
 
     /**
      * display method.
+     *
+     * @return     String representation of the object.
      */
     public String toString() {
         String str = "";

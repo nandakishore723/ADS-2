@@ -44,6 +44,9 @@ class GraphMatrix {
 
     /**
      * Adds an edge.
+     * The complexity of the following method is O(1).
+     * As the statment of the method executes only once for the
+     * each method calls.
      *
      * @param      v1    the int.
      * @param      w    the int.
@@ -60,6 +63,9 @@ class GraphMatrix {
 
     /**
      * Determines if it has edge.
+     * The complexity of the following method is O(1).
+     * As the statment of the method executes only once for the
+     * each method calls.
      *
      * @param      v1    the int.
      * @param      w    the int.
@@ -75,6 +81,10 @@ class GraphMatrix {
 
     /**
      * display method.
+     * The complexity of the following method is O(E).
+     * where V is the no.of vertices
+     * As the method executes for the iterations of two for loops
+     * upto their end values.
      *
      * @return     String representation of the object.
      */

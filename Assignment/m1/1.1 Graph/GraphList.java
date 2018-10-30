@@ -21,6 +21,8 @@ class GraphList {
     private String[] tokens;
     /**
      * Constructs the object.
+     * By the analysis the complexity of the following method
+     * was the O(V).
      */
     GraphList() {
     }
@@ -47,6 +49,9 @@ class GraphList {
 
     /**
      * method for vertices.
+     * By the analysis the complexity of the following method
+     * was the O(1).
+     * As the method calls the statment exectes only once. 
      *
      * @return  vertices.
      */
@@ -55,6 +60,9 @@ class GraphList {
     }
     /**
      * method for edges.
+     * By the analysis the complexity of the following method
+     * was the O(1).
+     * As the method calls the statment exectes only once.
      *
      * @return edges.
      */
@@ -82,6 +90,10 @@ class GraphList {
      * method for adjacent vertex.
      *
      * @param      v1    the int.
+     * By the analysis the complexity of the following method
+     * was the O(E).
+     * where E is the no.of edges in the graph.
+     * As the method calls the statment exectes only once.
      *
      * @return adjacent vertex.
      */
@@ -94,6 +106,9 @@ class GraphList {
      *
      * @param      v1    the int.
      * @param      w    the int.
+     *  By the analysis the complexity of the following method
+     * was the O(1).
+     * As the method calls the statment exectes only once.
      *
      * @return     True if has edge, False otherwise.
      */

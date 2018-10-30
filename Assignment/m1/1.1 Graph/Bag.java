@@ -15,8 +15,14 @@ import java.util.NoSuchElementException;
  * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
-    private int N;         // number of elements in bag
-    private Node first;    // beginning of bag
+    /**
+     * number of elements in bag.
+     */
+    private int N;
+    /**
+     * beginning of bag.
+     */
+    private Node first;
 
     /**
      * Class for node.

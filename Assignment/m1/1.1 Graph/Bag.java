@@ -95,12 +95,12 @@ public class Bag<Item> implements Iterable<Item> {
          */
         private Node current = first;
 
-        public boolean hasNext()  { 
-            return current != null; 
+        public boolean hasNext() {
+            return current != null;
         }
-        
-        public void remove()  { 
-            throw new UnsupportedOperationException(); 
+
+        public void remove() {
+            throw new UnsupportedOperationException();
         }
 
         /**

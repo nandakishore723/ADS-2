@@ -36,10 +36,10 @@ class GraphList {
         for (i = 0; i < v; i++) {
             adj[i] = new Bag<Integer>();
         }
-        int e = Integer.parseInt(scan.nextLine());
+        int e1 = Integer.parseInt(scan.nextLine());
         tokens = scan.nextLine().split(",");
         int j;
-        for (j = 0; j < e; j++) {
+        for (j = 0; j < e1; j++) {
             String[] inputs = scan.nextLine().split(" ");
             addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
@@ -59,7 +59,8 @@ class GraphList {
      * @return edges.
      */
     public int e1() {
-        return e;
+        return e
+        ;
     }
 
     /**

@@ -58,7 +58,7 @@ class GraphList {
      *
      * @return edges.
      */
-    public int e() {
+    public int e1() {
         return e;
     }
 
@@ -81,12 +81,12 @@ class GraphList {
     /**
      * method for adjacent vertex.
      *
-     * @param      v    the int.
+     * @param      v1    the int.
      *
      * @return adjacent vertex.
      */
-    public Iterable<Integer> adj(final int v) {
-        return adj[v];
+    public Iterable<Integer> adj(final int v1) {
+        return adj[v1];
     }
 
     /**

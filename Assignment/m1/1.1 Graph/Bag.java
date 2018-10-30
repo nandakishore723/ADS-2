@@ -19,31 +19,31 @@ public class Bag<Item> implements Iterable<Item> {
         private Node next;
     }
 
-   /**
-     * Create an empty stack.
-     */
+    /**
+      * Create an empty stack.
+      */
     public Bag() {
         first = null;
         N = 0;
     }
 
-   /**
-     * Is the BAG empty?
-     */
+    /**
+      * Is the BAG empty?
+      */
     public boolean isEmpty() {
         return first == null;
     }
 
-   /**
-     * Return the number of items in the bag.
-     */
+    /**
+      * Return the number of items in the bag.
+      */
     public int size() {
         return N;
     }
 
-   /**
-     * Add the item to the bag.
-     */
+    /**
+      * Add the item to the bag.
+      */
     public void add(Item item) {
         Node oldfirst = first;
         first = new Node();
@@ -52,11 +52,11 @@ public class Bag<Item> implements Iterable<Item> {
         N++;
     }
 
-   /**
-     * Return an iterator that iterates over the items in the bag.
-     */
+    /**
+      * Return an iterator that iterates over the items in the bag.
+      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
 
     // an iterator, doesn't implement remove() since it's optional
@@ -69,7 +69,7 @@ public class Bag<Item> implements Iterable<Item> {
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }

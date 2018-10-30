@@ -21,13 +21,9 @@ Audit done.
 Checkstyle ends with 18 errors.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:39:13: 'e' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:88:34: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:88:38: 'v' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:100:28: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:100:32: 'v' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:100:35: Parameter w should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:88:34: Parameter v1 should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...

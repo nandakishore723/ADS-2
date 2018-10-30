@@ -81,23 +81,23 @@ class GraphList {
     /**
      * method for adjacent vertex.
      *
-     * @param      v    the int.
+     * @param      v1    the int.
      *
      * @return adjacent vertex.
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(int v1) {
         return adj[v];
     }
 
     /**
      * Determines if it has edge.
      *
-     * @param      v    the int.
+     * @param      v1    the int.
      * @param      w    the int.
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
+    public boolean hasEdge(final int v1, final int w) {
         return true;
     }
 

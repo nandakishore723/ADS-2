@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * List of graphs.
  */
@@ -30,7 +29,7 @@ class GraphList {
      *
      * @param      scan  The scan
      */
-    GraphList(Scanner scan) {
+    GraphList(final Scanner scan) {
         this.v = Integer.parseInt(scan.nextLine());
         adj = (Bag<Integer>[]) new Bag[v];
         int i;

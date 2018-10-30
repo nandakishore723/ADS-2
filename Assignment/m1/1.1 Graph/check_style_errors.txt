@@ -20,19 +20,17 @@ Starting audit...
 Audit done.
 Checkstyle ends with 18 errors.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:33:15: Parameter scan should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:40:13: 'e' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:72:25: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:72:29: 'v' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:72:32: Parameter w should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:89:34: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:89:38: 'v' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:101:28: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:101:32: 'v' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:101:35: Parameter w should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:39:13: 'e' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:71:25: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:71:29: 'v' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:71:32: Parameter w should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:88:34: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:88:38: 'v' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:100:28: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:100:32: 'v' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\GraphList.java:100:35: Parameter w should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...

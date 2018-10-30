@@ -51,7 +51,7 @@ class GraphList {
      * method for vertices.
      * By the analysis the complexity of the following method
      * was the O(1).
-     * As the method calls the statment exectes only once. 
+     * As the method calls the statment exectes only once.
      *
      * @return  vertices.
      */
@@ -106,7 +106,7 @@ class GraphList {
      *
      * @param      v1    the int.
      * @param      w    the int.
-     *  By the analysis the complexity of the following method
+     * By the analysis the complexity of the following method
      * was the O(1).
      * As the method calls the statment exectes only once.
      *

@@ -81,11 +81,11 @@ class GraphList {
     /**
      * method for adjacent vertex.
      *
-     * @param      v1    the int.
+     * @param      v    the int.
      *
      * @return adjacent vertex.
      */
-    public Iterable<Integer> adj(int v1) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
 

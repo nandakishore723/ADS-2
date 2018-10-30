@@ -78,9 +78,11 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-      * Return an iterator that iterates over the items in the bag.
-      */
-    public Iterator<Item> iterator()  {
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }.
+     */
+    public Iterator<Item> iterator() {
         return new ListIterator();
     }
 

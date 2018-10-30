@@ -59,8 +59,7 @@ class GraphList {
      * @return edges.
      */
     public int e1() {
-        return e
-        ;
+        return e;
     }
 
     /**

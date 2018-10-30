@@ -1,9 +1,5 @@
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:120:29: '{' at column 29 should have line break after. [LeftCurly]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:120:67: '}' at column 67 should be alone on a line. [RightCurly]
-[ERROR] D:\ADS-2\Assignment\m1\1.1 Graph\Bag.java:120:69: Avoid nested blocks. [AvoidNestedBlocks]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...

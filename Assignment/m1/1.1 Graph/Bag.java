@@ -88,6 +88,9 @@ public class Bag<Item> implements Iterable<Item> {
      * Class for list iterator.
      */
     private class ListIterator implements Iterator<Item> {
+        /**
+         * current Node.
+         */
         private Node current = first;
 
         public boolean hasNext()  { return current != null; }

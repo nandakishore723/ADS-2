@@ -65,13 +65,13 @@ class GraphList {
     /**
      * Adds an edge.
      *
-     * @param      v    the int.
+     * @param      v1    the int.
      * @param      w    the int.
      */
-    public void addEdge(int v, int w) {
-        if (v != w) {
-            adj[v].add(w);
-            adj[w].add(v);
+    public void addEdge(final int v1, final int w) {
+        if (v1 != w) {
+            adj[v1].add(w);
+            adj[w].add(v1);
             e++;
         } else {
             return;

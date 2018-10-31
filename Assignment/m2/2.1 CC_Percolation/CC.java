@@ -12,7 +12,7 @@ public class CC {
      *
      * @param      g     the undirected graph
      */
-    public CC(Graph g) {
+    public CC(final Graph g) {
         marked = new boolean[g.V()];
         id = new int[g.V()];
         size = new int[g.V()];
@@ -31,7 +31,7 @@ public class CC {
      * @param      g     { parameter_description }.
      * @param      v     { parameter_description }.
      */
-    private void dfs(Graph g, int v) {
+    private void dfs(final Graph g, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
@@ -51,7 +51,7 @@ public class CC {
      * vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int id(int v) {
+    public int id(final int v) {
         validateVertex(v);
         return id[v];
     }
@@ -65,7 +65,7 @@ public class CC {
      * vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int size(int v) {
+    public int size(final int v) {
         validateVertex(v);
         return size[id[v]];
     }
@@ -109,7 +109,7 @@ public class CC {
      * @deprecated Replaced by {@link #connected(int, int)}.
      */
     @Deprecated
-    public boolean areConnected(int v, int w) {
+    public boolean areConnected(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         return id(v) == id(w);
@@ -120,7 +120,7 @@ public class CC {
      *
      * @param      v     { parameter_description }.
      */
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
             throw new IllegalArgumentException(

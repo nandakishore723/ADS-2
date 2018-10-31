@@ -2,10 +2,22 @@
  * Class for cc.
  */
 public class CC {
-    private boolean[] marked; // marked[v] = has vertex v been marked?
-    private int[] id;         // id[v] = id of connected component containing v
-    private int[] size;       // size[id] = no. of vertices in given component
-    private int count;        // number of connected components
+    /**
+     * marked[v] = has vertex v been marked?
+     */
+    private boolean[] marked;
+    /**
+     * id[v] = id of connected component containing v.
+     */
+    private int[] id;
+    /**
+     * size[id] = no. of vertices in given component.
+     */
+    private int[] size;
+    /**
+     * number of connected components.
+     */
+    private int count;
 
     /**
      * Computes the connected components of the undirected graph {@code g}.

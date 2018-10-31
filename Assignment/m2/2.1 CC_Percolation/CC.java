@@ -134,9 +134,9 @@ public class CC {
      * @param      v     { parameter_description }.
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
+        int v1 = marked.length;
+        if (v < 0 || v >= v1)
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V - 1));
+                "vertex " + v + " is not between 0 and " + (v1 - 1));
     }
 }

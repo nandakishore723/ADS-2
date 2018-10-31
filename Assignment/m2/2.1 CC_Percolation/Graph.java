@@ -32,8 +32,8 @@ public class Graph {
                 "Number of vertices must be nonnegative");
         this.ver = V;
         this.ed = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int i = 0; i < V; i++) {
+        adj = (Bag<Integer>[]) new Bag[ver];
+        for (int i = 0; i < ver; i++) {
             adj[i] = new Bag<Integer>();
         }
     }

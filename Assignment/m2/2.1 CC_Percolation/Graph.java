@@ -55,16 +55,17 @@ public class Graph {
     public int E() {
         return E;
     }
-
+   
     /**
      * throw an IllegalArgumentException unless {@code 0 <= v < V}.
      *
      * @param      v     { parameter_description }.
      */
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V)
+    private void validateVertex(final int v) {
+        if (v < 0 || v >= V) {
             throw new IllegalArgumentException(
                 "vertex " + v + " is not between 0 and " + (V - 1));
+        }
     }
 
     /**

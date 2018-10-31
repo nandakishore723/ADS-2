@@ -14,7 +14,7 @@ public class Graph {
     /**
      * { var_description }.
      */
-    private int E;
+    private int edge;
     /**
      * { var_description }.
      */
@@ -31,7 +31,7 @@ public class Graph {
         if (ver < 0) throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
         this.ver = ver;
-        this.E = 0;
+        this.edge = 0;
         adj = (Bag<Integer>[]) new Bag[ver];
         for (int i = 0; i < ver; i++) {
             adj[i] = new Bag<Integer>();
@@ -53,7 +53,7 @@ public class Graph {
      * @return the number of edges in this graph
      */
     public int E() {
-        return E;
+        return edge;
     }
 
     /**
@@ -79,7 +79,7 @@ public class Graph {
     public void addEdge(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
-        E++;
+        edge++;
         adj[v].add(w);
         adj[w].add(v);
     }
@@ -135,7 +135,7 @@ public class Graph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(ver + " vertices, " + E + " edges " + NEWLINE);
+        s.append(ver + " vertices, " + edge + " edges " + NEWLINE);
         for (int v = 0; v < ver; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {

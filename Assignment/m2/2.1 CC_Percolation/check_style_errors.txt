@@ -3,29 +3,18 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:8:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:9:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:19:18: Parameter V should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:19:22: 'V' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:19:22: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:20: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:35:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:44:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:49:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:49:33: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:50: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:63:25: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:63:32: Parameter w should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:79:28: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:79:35: Parameter w should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:95:34: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:107:23: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:13:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:17:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:30:28: 'V' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:30:28: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:31: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:46:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:55:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:60:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:60:33: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:61: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -1,3 +1,6 @@
+/**
+ * Class for cc.
+ */
 public class CC {
     private boolean[] marked; // marked[v] = has vertex v been marked?
     private int[] id;         // id[v] = id of connected component containing v

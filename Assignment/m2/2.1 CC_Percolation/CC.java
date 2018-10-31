@@ -69,7 +69,8 @@ public class CC {
     }
 
     /**
-     * Returns the number of vertices in the connected component containing vertex
+     * Returns the number of vertices in the connected component containing
+     * vertex
      * {@code v}.
      *
      * @param  v the vertex

@@ -28,8 +28,10 @@ public class Graph {
      * @throws     IllegalArgumentException  if {@code ver < 0}.
      */
     public Graph(final int v) {
-        if (v < 0) { throw new IllegalArgumentException(
-                "Number of vertices must be nonnegative"); }
+        if (v < 0) {
+            throw new IllegalArgumentException(
+                "Number of vertices must be nonnegative");
+        }
         this.ver = v;
         this.edge = 0;
         adj = (Bag<Integer>[]) new Bag[ver];
@@ -43,7 +45,7 @@ public class Graph {
      *
      * @return the number of vertices in this graph
      */
-    public int v() {
+    public int V() {
         return ver;
     }
 
@@ -52,7 +54,7 @@ public class Graph {
      *
      * @return the number of edges in this graph
      */
-    public int e() {
+    public int E() {
         return edge;
     }
 

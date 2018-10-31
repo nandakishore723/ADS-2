@@ -1,12 +1,10 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\CC.java:106:30: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\CC.java:106:37: Parameter w should be final. [FinalParameters]
 [ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\CC.java:137:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\CC.java:138: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:3: Missing a Javadoc comment. [JavadocType]

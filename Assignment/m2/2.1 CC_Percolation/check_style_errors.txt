@@ -3,13 +3,10 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:27:8: Unused @param tag for 'ver'. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:30:28: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:31: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:46:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:55:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:31:20: '{' at column 20 should have line break after. [LeftCurly]
+[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:32:60: '}' at column 60 should be on a new line. [RightCurly]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...

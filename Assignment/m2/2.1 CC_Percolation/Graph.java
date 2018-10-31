@@ -21,15 +21,15 @@ public class Graph {
     private Bag<Integer>[] adj;
 
     /**
-     * Initializes an empty graph with {@code ver} vertices and 0 edges.
-     * param ver the number of vertices
+     * Initializes an empty graph with {@code ver} vertices and 0 edges. param
+     * ver the number of vertices
      *
-     * @param  ver number of vertices
-     * @throws IllegalArgumentException if {@code ver < 0}.
+     * @param      v     { parameter_description }
+     * @throws     IllegalArgumentException  if {@code ver < 0}.
      */
     public Graph(final int v) {
-        if (v < 0) throw new IllegalArgumentException(
-                "Number of vertices must be nonnegative");
+        if (v < 0) { throw new IllegalArgumentException(
+                "Number of vertices must be nonnegative"); }
         this.ver = v;
         this.edge = 0;
         adj = (Bag<Integer>[]) new Bag[ver];
@@ -43,7 +43,7 @@ public class Graph {
      *
      * @return the number of vertices in this graph
      */
-    public int V() {
+    public int v() {
         return ver;
     }
 
@@ -52,7 +52,7 @@ public class Graph {
      *
      * @return the number of edges in this graph
      */
-    public int E() {
+    public int e() {
         return edge;
     }
 

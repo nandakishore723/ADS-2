@@ -24,7 +24,7 @@ public final class Solution {
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
             pcObj.open(Integer.parseInt(tokens[0]),
-                       Integer.parseInt(tokens[1]));
+                      Integer.parseInt(tokens[1]));
         }
         System.out.println(pcObj.percolates()
                            && pcObj.numberOfOpenSites() != 0);

@@ -8,18 +8,18 @@ public class CC {
     private int count;        // number of connected components
 
     /**
-     * Computes the connected components of the undirected graph {@code G}.
+     * Computes the connected components of the undirected graph {@code g}.
      *
-     * @param      G     the undirected graph
+     * @param      g     the undirected graph
      */
-    public CC(Graph G) {
-        marked = new boolean[G.V()];
-        id = new int[G.V()];
-        size = new int[G.V()];
+    public CC(Graph g) {
+        marked = new boolean[g.V()];
+        id = new int[g.V()];
+        size = new int[g.V()];
         int v;
-        for (v = 0; v < G.V(); v++) {
+        for (v = 0; v < g.V(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(g, v);
                 count++;
             }
         }
@@ -28,16 +28,16 @@ public class CC {
     /**
      * { function_description }.
      *
-     * @param      G     { parameter_description }.
+     * @param      g     { parameter_description }.
      * @param      v     { parameter_description }.
      */
-    private void dfs(Graph G, int v) {
+    private void dfs(Graph g, int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(g, w);
             }
         }
     }
@@ -71,9 +71,9 @@ public class CC {
     }
 
     /**
-     * Returns the number of connected components in the graph {@code G}.
+     * Returns the number of connected components in the graph {@code g}.
      *
-     * @return the number of connected components in the graph {@code G}
+     * @return the number of connected components in the graph {@code g}
      */
     public int count() {
         return count;

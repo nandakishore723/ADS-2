@@ -27,10 +27,10 @@ public class Graph {
      * @param  ver number of vertices
      * @throws IllegalArgumentException if {@code ver < 0}.
      */
-    public Graph(final int ver) {
-        if (ver < 0) throw new IllegalArgumentException(
+    public Graph(final int v) {
+        if (v < 0) throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
-        this.ver = ver;
+        this.ver = v;
         this.edge = 0;
         adj = (Bag<Integer>[]) new Bag[ver];
         for (int i = 0; i < ver; i++) {

@@ -27,13 +27,13 @@ public class Graph {
      * @param  V number of vertices
      * @throws IllegalArgumentException if {@code V < 0}.
      */
-    public Graph(final int V) {
-        if (V < 0) throw new IllegalArgumentException(
+    public Graph(final int V1) {
+        if (V1 < 0) throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
-        this.V = V;
+        this.V = V1;
         this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        adj = (Bag<Integer>[]) new Bag[V1];
+        for (int v = 0; v < V1; v++) {
             adj[v] = new Bag<Integer>();
         }
     }

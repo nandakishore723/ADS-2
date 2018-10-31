@@ -57,9 +57,9 @@ public class Graph {
     }
    
     /**
-     * throw an IllegalArgumentException unless {@code 0 <= v < V}
+     * throw an IllegalArgumentException unless {@code 0 <= v < V}.
      *
-     * @param      v     { parameter_description }
+     * @param      v     { parameter_description }.
      */
     private void validateVertex(int v) {
         if (v < 0 || v >= V)

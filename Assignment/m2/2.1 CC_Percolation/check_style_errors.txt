@@ -11,11 +11,10 @@ Starting audit...
 [ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:46:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:55:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:58: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:59: First sentence should end with a period. [JavadocStyle]
 [ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:64:33: Parameter v should be final. [FinalParameters]
 [ERROR] D:\ADS-2\Assignment\m2\2.1 CC_Percolation\Graph.java:65: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 Audit done.
 Starting audit...

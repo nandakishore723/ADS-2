@@ -14,8 +14,7 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\Assignment\m3\3.1 Directed Cycle\Stack.java:36:16: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\ADS-2\Assignment\m3\3.1 Directed Cycle\Stack.java:66:21: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\ADS-2\Assignment\m3\3.1 Directed Cycle\Stack.java:67:21: '=' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 3 errors.

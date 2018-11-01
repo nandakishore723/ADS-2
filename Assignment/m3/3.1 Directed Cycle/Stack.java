@@ -33,7 +33,7 @@ public class Stack<Item> {
      * Initializes an empty stack.
      */
     Stack() {
-        first =null;
+        first = null;
         n = 0;
     }
 

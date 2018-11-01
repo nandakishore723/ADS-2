@@ -101,7 +101,7 @@ public class Bag<Item> implements Iterable<Item> {
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
-            return current !=null;
+            return current != null;
         }
 
         /**

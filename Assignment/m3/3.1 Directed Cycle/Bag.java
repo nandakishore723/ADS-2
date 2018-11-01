@@ -120,7 +120,7 @@ public class Bag<Item> implements Iterable<Item> {
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
-            Item item =current.item;
+            Item item = current.item;
             current= current.next;
             return item;
         }

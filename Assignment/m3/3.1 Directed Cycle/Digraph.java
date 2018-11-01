@@ -32,7 +32,7 @@ public class Digraph {
         }
         this.vertices = v;
         this.edges = 0;
-        indegree =new int[vertices];
+        indegree = new int[vertices];
         adj = (Bag<Integer>[]) new Bag[vertices];
         for (int i = 0; i < vertices; i++) {
             adj[i] = new Bag<Integer>();

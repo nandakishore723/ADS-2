@@ -1,11 +1,10 @@
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\Assignment\m3\3.1 Directed Cycle\Bag.java:55:24: '==' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\ADS-2\Assignment\m3\3.1 Directed Cycle\Bag.java:104:30: '!=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\ADS-2\Assignment\m3\3.1 Directed Cycle\Bag.java:123:24: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\ADS-2\Assignment\m3\3.1 Directed Cycle\Bag.java:124:20: '=' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...

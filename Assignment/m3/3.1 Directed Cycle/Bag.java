@@ -52,7 +52,7 @@ public class Bag<Item> implements Iterable<Item> {
       * @return     True if empty, False otherwise.
       */
     public boolean isEmpty() {
-        return first ==null;
+        return first == null;
     }
 
     /**

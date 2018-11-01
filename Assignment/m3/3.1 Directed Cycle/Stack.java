@@ -33,7 +33,7 @@ public class Stack<Item> {
      * Initializes an empty stack.
      */
     Stack() {
-        first = null;
+        first =null;
         n = 0;
     }
 
@@ -63,8 +63,8 @@ public class Stack<Item> {
     public void push(final Item item) {
         Node<Item> oldfirst = first;
         first = new Node<Item>();
-        first.item = item;
-        first.next = oldfirst;
+        first.item =item;
+        first.next =oldfirst;
         n++;
     }
 

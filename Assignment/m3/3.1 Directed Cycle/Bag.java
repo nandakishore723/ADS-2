@@ -52,7 +52,7 @@ public class Bag<Item> implements Iterable<Item> {
       * @return     True if empty, False otherwise.
       */
     public boolean isEmpty() {
-        return first == null;
+        return first ==null;
     }
 
     /**
@@ -101,7 +101,7 @@ public class Bag<Item> implements Iterable<Item> {
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
-            return current != null;
+            return current !=null;
         }
 
         /**
@@ -120,8 +120,8 @@ public class Bag<Item> implements Iterable<Item> {
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
-            Item item = current.item;
-            current = current.next;
+            Item item =current.item;
+            current= current.next;
             return item;
         }
     }

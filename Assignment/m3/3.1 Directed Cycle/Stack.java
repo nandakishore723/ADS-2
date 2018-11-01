@@ -64,7 +64,7 @@ public class Stack<Item> {
         Node<Item> oldfirst = first;
         first = new Node<Item>();
         first.item = item;
-        first.next =oldfirst;
+        first.next = oldfirst;
         n++;
     }
 

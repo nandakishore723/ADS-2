@@ -19,7 +19,7 @@ public class DirectedCycle {
      */
     private Stack<Integer> cycle;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int vertices;
     /**

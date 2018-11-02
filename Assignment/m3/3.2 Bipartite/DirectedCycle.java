@@ -23,7 +23,7 @@ public class DirectedCycle {
      */
     private int vertices;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private boolean isbipartite = false;
     /**

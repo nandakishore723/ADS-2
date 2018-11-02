@@ -37,7 +37,9 @@ public class DirectedCycle {
         onStack = new boolean[graph.vertices()];
         edgeTo  = new int[graph.vertices()];
         for (int v = 0; v < graph.vertices(); v++) {
-            if (!marked[v] && cycle == null) dfs(graph, v);
+            if (!marked[v] && cycle == null) {
+                dfs(graph, v);
+            }
         }
     }
     /**

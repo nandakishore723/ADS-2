@@ -54,7 +54,7 @@ public class DirectedCycle {
 
             // short circuit if directed cycle found
             if (cycle != null) {
-             return;
+                return;
             }
 
             // found new vertex, so recur

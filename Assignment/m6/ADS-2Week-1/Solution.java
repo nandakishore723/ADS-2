@@ -43,7 +43,7 @@ class PageRank {
      * @return     String representation of the object.
      */
     public String toString() {
-        String str = "";
+        String str = " ";
         str = str + dig + "\n";
         int i;
         for (i = 0; i < dig.V(); i++) {

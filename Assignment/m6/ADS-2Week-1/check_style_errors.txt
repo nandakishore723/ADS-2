@@ -210,9 +210,8 @@ Starting audit...
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:88:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:94:29: Parameter args should be final. [FinalParameters]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:94:38: Expected @param tag for 'args'. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:107: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Stack.java:28: Line is longer than 80 characters (found 89). [LineLength]

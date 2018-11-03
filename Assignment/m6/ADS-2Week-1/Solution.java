@@ -104,7 +104,8 @@ public final class Solution {
             String[] line = scan.nextLine().split(" ");
             int j;
             for (j = 1; j < line.length; j++) {
-                digraph.addEdge(Integer.parseInt(line[0]), Integer.parseInt(line[j]));
+                digraph.addEdge(Integer.parseInt(line[0]),
+                                Integer.parseInt(line[j]));
             }
         }
         // Create page rank object and pass the graph object to the constructor

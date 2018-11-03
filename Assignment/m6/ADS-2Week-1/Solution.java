@@ -27,7 +27,7 @@ class PageRank {
      *
      * @return     The pr.
      */
-    double getPR(int v) {
+    double getPR(final int v) {
         double npg = pg[v];
         int j;
         for (j = 0; j < 1000; j++) {

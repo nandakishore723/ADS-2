@@ -208,7 +208,6 @@ Starting audit...
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:7:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:8:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:14:28: 'dig' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:30:18: Parameter v should be final. [FinalParameters]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:33:25: '1000' is a magic number. [MagicNumber]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:41: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:80: Class Solution should be declared as final. [FinalClass]
@@ -217,7 +216,7 @@ Starting audit...
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:88:38: Expected @param tag for 'args'. [JavadocMethod]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Solution.java:101: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\Assignment\m6\ADS-2Week-1\Stack.java:28: Line is longer than 80 characters (found 89). [LineLength]

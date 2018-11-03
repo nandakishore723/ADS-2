@@ -11,7 +11,7 @@ class PageRank {
      *
      * @param      dig   The dig
      */
-    PageRank(Digraph dig) {
+    PageRank(final Digraph dig) {
         this.dig = dig;
         pg = new double[dig.V()];
         int i;

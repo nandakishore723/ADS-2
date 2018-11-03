@@ -83,7 +83,7 @@ class PageRank {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 
     private Solution() {
         //unused

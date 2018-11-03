@@ -90,8 +90,10 @@ public final class Solution {
     }
     /**
      * Constructs the object.
+     *
+     * @param      args  The arguments.
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // read the first line of the input to get the number of vertices
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());

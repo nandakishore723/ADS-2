@@ -4,8 +4,14 @@ import java.util.Scanner;
  * Class for page rank.
  */
 class PageRank {
-    Digraph dig;
-    double[] pg;
+    private Digraph dig;
+    private double[] pg;
+    
+    /**
+     * Constructs the object.
+     *
+     * @param      dig   The dig
+     */
     PageRank(Digraph dig) {
         this.dig = dig;
         pg = new double[dig.V()];

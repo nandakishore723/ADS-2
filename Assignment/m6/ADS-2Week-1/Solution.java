@@ -4,7 +4,13 @@ import java.util.Scanner;
  * Class for page rank.
  */
 class PageRank {
+    /**
+     * { var_description }.
+     */
     private Digraph dig;
+    /**
+     * { var_description }.
+     */
     private double[] pg;
     /**
      * Constructs the object.
@@ -48,7 +54,7 @@ class PageRank {
      * @return     String representation of the object.
      */
     public String toString() {
-        String str = " ";
+        String str = "";
         str = str + dig + "\n";
         int i;
         for (i = 0; i < dig.V(); i++) {
@@ -121,3 +127,5 @@ public class Solution {
 
     }
 }
+
+

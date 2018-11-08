@@ -34,16 +34,16 @@ public class SeamCarver {
 			Color right = picture.get(x, y + 1);
 			Color top = picture.get(x - 1, y);
 			Color bottom = picture.get(x + 1, y);
-			int red = bottom.getRed() - top.getRed();
-			int blue = bottom.getBlue() - top.getBlue();
-			int green = bottom.getGreen() - top.getGreen();
-			int horizontal = red * red + blue * blue + green * green;
-			int redv = left.getRed() - right.getRed();
-			int bluev = left.getBlue() - right.getBlue();
-			int greenv = left.getGreen() - right.getGreen();
-			int vertical = redv * redv + bluev * bluev + greenv * greenv;
-			double enrgy = Math.sqrt(horizontal + vertical);
-			return enrgy;
+			int rh = bottom.getRed() - top.getRed();
+			int bh = bottom.getBlue() - top.getBlue();
+			int gh = bottom.getGreen() - top.getGreen();
+			int horizontal = rh * rh + bh * bh + gh * gh;
+			int rv = left.getRed() - right.getRed();
+			int bv = left.getBlue() - right.getBlue();
+			int gv = left.getGreen() - right.getGreen();
+			int vertical = rv * rv + bv * bv + gv * gv;
+			double enr = Math.sqrt(horizontal + vertical);
+			return enr;
 		}
 	}
 

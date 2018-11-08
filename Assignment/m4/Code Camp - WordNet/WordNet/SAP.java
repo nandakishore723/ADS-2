@@ -1,58 +1,87 @@
+/**
+ * Class for sap.
+ */
 public class SAP {
-
-    Digraph graph;
-    int ancestor;
-    int distance;
-    BreadthFirstDirectedPaths bfsV;
-    BreadthFirstDirectedPaths bfsW;
-
-    // constructor takes a digraph (not necessarily a DAG)
-    public SAP(Digraph graph) {
-        this.graph = graph;
-        ancestor = -1;
-        distance = Integer.MAX_VALUE;
+    /**
+     * digraph.
+     */
+    private Digraph dg;
+    /**
+     * distance.
+     */
+    private int distance = Integer.MAX_VALUE;
+    /**
+     * ancestor.
+     */
+    private int ancestor1 = -1;
+    /**
+     * Constructs the object.
+     *
+     * @param      digraph  The digraph
+     */
+    public SAP(final Digraph digraph) {
+        dg = digraph;
     }
-
-    // length of shortest ancestral path between v and w; -1 if no such path
-    public int length(int v, int w) {
-        return (distance == Integer.MAX_VALUE) ? -1 : distance;
+    /**
+     * length.
+     *
+     * @param      v    integer variable.
+     * @param      w    integer variable.
+     *
+     * @return  distance.
+     */
+    public int length(final int v, final int w) {
+        ancestor(v, w);
+        return distance;
     }
-
-    // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
-    public int ancestor(int v, int w) {
-        bfsV = new BreadthFirstDirectedPaths(graph, v);
-        bfsW = new BreadthFirstDirectedPaths(graph, w);
-        distance = Integer.MAX_VALUE;
-        for (int e = 0; e < graph.V(); e++) {
-            if (bfsV.hasPathTo(e) && bfsW.hasPathTo(e)) {
-                if (distance >= (bfsV.distTo(e) + bfsW.distTo(e))) {
-                    distance = bfsV.distTo(e) + bfsW.distTo(e);
-                    ancestor = e;
+    /**
+     * ancestor.
+     *
+     * @param      v  integer variable.
+     * @param      w  integer variable.
+     *
+     * @return    ancestor.
+     */
+    public int ancestor(final int v, final int w) {
+        BreadthFirstDirectedPaths b1 = new BreadthFirstDirectedPaths(dg, v);
+        BreadthFirstDirectedPaths b2 = new BreadthFirstDirectedPaths(dg, w);
+        for (int vertices = 0; vertices < dg.v(); vertices++) {
+            if (b1.hasPathTo(vertices) && b2.hasPathTo(vertices)) {
+                int newdistance = b1.distTo(vertices) + b2.distTo(vertices);
+                if (newdistance < distance) {
+                    distance = newdistance;
+                    ancestor1 = vertices;
                 }
             }
         }
-        return ancestor;
+        return ancestor1;
     }
-
-    // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
-    public int length(Iterable<Integer> v, Iterable<Integer> w) {
-        return (distance == Integer.MAX_VALUE)? -1 : distance;
+    /**
+     * length.
+     *
+     * @param      v   integer variable.
+     * @param      w   integer variable.
+     *
+     * @return length.
+     */
+    public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
+        ancestor(v, w);
+        return distance;
     }
-
-    // a common ancestor that participates in shortest ancestral path; -1 if no such path
-    public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
-        int anc = -1;
-        int length = Integer.MAX_VALUE;
-        for (int e1 : v) {
-            for (int e2 : w) {
-                int ancestor = ancestor(e1, e2);
-                if (length >= length(e1, e2)) {
-                    length = distance;
-                    anc = ancestor;
-                }
+    /**
+     * ancestor.
+     *
+     * @param      v   integer variable.
+     * @param      w   integer variable.
+     *
+     * @return ancestor.
+     */
+    public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
+        for (int v1 : v) {
+            for (int w1 : w) {
+                ancestor1 = ancestor(v1, w1);
             }
         }
-        distance = length;
-        return anc;
+        return ancestor1;
     }
 }

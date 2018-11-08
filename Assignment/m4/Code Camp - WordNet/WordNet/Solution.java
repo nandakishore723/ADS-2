@@ -1,31 +1,60 @@
+/**
+ * @author : nandakishore723.
+ */
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
+class Solution {
+    /**
+     * Constructs the object.
+     */
+    protected Solution() {
 
-public class Solution {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		String synsetsFileName = scan.nextLine();
-		String hypernymFileName = scan.nextLine();
-		String line = scan.nextLine();
-		WordNet wordNet = new WordNet("Files/" + synsetsFileName, 
-			"Files/" + hypernymFileName);
+    }
+    /**
+     * main method.
+     *Time Complexity : O(V).
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String synset = sc.nextLine();
+        String hypernyms = sc.nextLine();
+        try {
+            WordNet w = new WordNet(synset, hypernyms);
+            String inputType = sc.nextLine();
+            if (w.gethasCycle()) {
+                System.out.println("Cycle detected");
+                return;
+            }
 
-		switch(line) {
-			case "Graph":
-			wordNet.printGraph();
-			break;
-			case "Queries":
-			try {
-				while (scan.hasNextLine()) {
-					String query = scan.nextLine();
-					wordNet.processQuery(query);
-				}
-			} catch(IllegalArgumentException iaEx) {
-				System.out.println(iaEx.getMessage());
-			}
-			break;
-			default:
-			break;
-		}
+            if (inputType.equals("Graph")) {
+                w.checkMultipleRoots();
+                if (w.gethasMultipleRoots()) {
+                    return;
+                } else {
 
-	}
+                    System.out.println(w.getDigraph());
+                }
+            }
+            if (inputType.equals("Queries")) {
+                while (sc.hasNextLine()) {
+                    String[] tokens = sc.nextLine().split(" ");
+                    try {
+                        w.sap(tokens[0], tokens[1]);
+                        System.out.println("distance = "
+                         + w.distance(tokens[0], tokens[1])
+                          + ", ancestor = " + w.sap(tokens[0], tokens[1]));
+
+                    } catch (Exception e) {
+                        System.out.println("IllegalArgumentException");
+                    }
+                }
+
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
 }

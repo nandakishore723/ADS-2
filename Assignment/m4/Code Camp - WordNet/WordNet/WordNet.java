@@ -1,118 +1,164 @@
 import java.util.ArrayList;
-
+import java.io.File;
+import java.util.HashMap;
+import java.util.Scanner;
+/**
+ * Class for word net.
+ */
 public class WordNet {
-
+    /**
+     * hash map.
+     */
+    private HashMap<String, ArrayList<Integer>> h = new
+    HashMap<String, ArrayList<Integer>>();
+    /**
+     * hashmap.
+     */
+    private HashMap<Integer, String> h2 = new
+    HashMap<Integer, String>();
+    /**
+     * digraph.
+     */
+    private Digraph dg;
+    /**
+     * SAP variable.
+     */
     private SAP sap;
-    private Digraph graph;
-    private ArrayList<String> alist;
-    private LinearProbingHashST<String, Bag<Integer>> ht;
-
-    // constructor takes the name of the two input files
-    public WordNet(String synsets, String hypernyms) {
-        ht = new LinearProbingHashST<String, Bag<Integer>>();
-        alist = new ArrayList<String>();
-        int V = processSynsets(synsets);
-        graph = buildGraph(hypernyms, V);
+    /**
+     * has cycle variable.
+     */
+    private boolean hasCycle = false;
+    /**
+     * has multiple roots variable.
+     */
+    private boolean hasMultipleRoots = false;
+    /**
+     * Gets the digraph.
+     *
+     * @return     The digraph.
+     */
+    public Digraph getDigraph() {
+        return this.dg;
     }
-
-    private int processSynsets(String synsets) {
-        In in = new In(synsets);
-        int count = 0;
-        alist = new ArrayList<String>();
-        while(in.hasNextLine()) {
-            String[] tokens = in.readLine().split(",");
-            String[] nouns = tokens[1].split(" ");
-            Bag<Integer> bag;
-            alist.add(Integer.parseInt(tokens[0]), tokens[1]);
-            for (String noun : nouns) {
-                if (ht.contains(noun)) {
-                    bag = ht.get(noun);
-                } else {
-                    bag = new Bag<Integer>();
+    /**
+     * get hasCycle.
+     *
+     * @return   boolean.
+     */
+    public boolean gethasCycle() {
+        return this.hasCycle;
+    }
+    /**
+     * hasmultipleroots.
+     *
+     * @return  boolean.
+     */
+    public boolean gethasMultipleRoots() {
+        return this.hasMultipleRoots;
+    }
+    /**
+     * Constructs the object.
+     *
+     * @param      synsets    The synsets
+     * @param      hypernyms  The hypernyms
+     */
+    public WordNet(final String synsets, final String hypernyms) {
+        try {
+            File fileOne = new File(
+                "Files/" + synsets);
+            Scanner fOne = new Scanner(fileOne);
+            File fileTwo = new File("Files/" + hypernyms);
+            Scanner fTwo = new Scanner(fileTwo);
+            while (fOne.hasNextLine()) {
+                String[] tokens = fOne.nextLine().split(",");
+                h2.put(Integer.parseInt(tokens[0]), tokens[1]);
+                String[] words = tokens[1].split(" ");
+                for (int i = 0; i < words.length; i++) {
+                    if (h.containsKey(words[i])) {
+                        ArrayList<Integer> arraylist = h.get(words[i]);
+                        arraylist.add(Integer.parseInt(tokens[0]));
+                    } else {
+                        ArrayList<Integer> arraylist = new ArrayList<Integer>();
+                        arraylist.add(Integer.parseInt(tokens[0]));
+                        h.put(words[i], arraylist);
+                    }
                 }
-                bag.add(Integer.parseInt(tokens[0]));
-                ht.put(noun, bag);
             }
-            count++;
-        }
-        return count;
-    }
-
-    private Digraph buildGraph(String hypernyms, int V) {
-        Digraph graph = new Digraph(V);
-        In in = new In(hypernyms);
-        while (in.hasNextLine()) {
-            String[] tokens = in.readLine().split(",");
-            for (int i = 1; i < tokens.length; i++) {
-                graph.addEdge(
-                    Integer.parseInt(tokens[0]),
-                    Integer.parseInt(tokens[i]));
+            dg = new Digraph(h.size());
+            while (fTwo.hasNextLine()) {
+                String[] tokens = fTwo.nextLine().split(",");
+                for (int i = 1; i < tokens.length; i++) {
+                    dg.addEdge(Integer.parseInt(tokens[0]),
+                               Integer.parseInt(tokens[i]));
+                }
             }
+        } catch (Exception e) {
+            System.out.println(e);
         }
-        return graph;
-    }
-
-    private boolean isRootedDAG(Digraph graph) {
-        int count = 0;
-        for (int v = 0; v < graph.V(); v++) {
-            if (graph.outdegree(v) == 0) {
-                count++;
-            }
-        }
-        return (count == 1) ? true : false;
-    }
-
-    public void printGraph() {
-        DirectedCycle dc = new DirectedCycle(graph);
+        DirectedCycle dc = new DirectedCycle(dg);
         if (dc.hasCycle()) {
-            System.out.println("Cycle detected");
-        } else if (!isRootedDAG(graph)) {
+            hasCycle = true;
+        }
+    }
+    /**
+     * check multiple roots method.
+     */
+    public void checkMultipleRoots() {
+        int roots = 0;
+        for (int i = 0; i < dg.v(); i++) {
+            if (dg.outdegree(i) == 0) {
+                roots++;
+            }
+        }
+        if (roots != 1) {
+            hasMultipleRoots = true;
             System.out.println("Multiple roots");
-        } else {
-            System.out.println(graph);
         }
     }
-
-    // returns all WordNet nouns
-    public Iterable<String> nouns() {
-        return ht.keys();
+    /**
+     * Determines if noun.
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
+    public boolean isNoun(final String word) {
+        // for (String s : h.getKeys()) {
+        //     if (s.equals(word)) {
+        //         return true;
+        //     }
+        // }
+        return true;
     }
-
-    // is the word a WordNet noun?
-    public boolean isNoun(String word) {
-        if (word.equals("null")) {
-            throw new IllegalArgumentException("IllegalArgumentException");
-        }
-        return ht.contains(word);
+    /**
+     * distance.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return distance between nouns.
+     */
+    public int distance(final String nounA, final String nounB) {
+        ArrayList id1 = h.get(nounA);
+        ArrayList id2 = h.get(nounB);
+        sap = new SAP(dg);
+        return sap.length(id1, id2);
     }
-
-    // distance between nounA and nounB (defined below)
-    public int distance(String nounA, String nounB) {
-        return sap.length(ht.get(nounA), ht.get(nounB));
-    }
-
-    // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-    // in a shortest ancestral path (defined below)
-    public String sap(String nounA, String nounB) {
-        int ancestor = sap.ancestor(ht.get(nounA), ht.get(nounB));
-        if (ancestor == -1)
-            throw new IllegalArgumentException("IllegalArgumentException");
-        return alist.get(ancestor);
-    }
-
-    public void processQuery(String query) {
-        String[] tokens = query.split(" ");
-        String str = "";
-        if (isNoun(tokens[0]) && isNoun(tokens[1])) {
-            sap = new SAP(graph);
-            str = sap(tokens[0], tokens[1]);
-            int distance = distance(tokens[0], tokens[1]);
-            System.out.println("distance = " + distance + ", ancestor = " + str);
-        }
-    }
-
-    // do unit testing of this class
-    public static void main(String[] args) {
-
+    /**
+     * sap method.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return string.
+     */
+    public String sap(final String nounA, final String nounB) {
+        ArrayList<Integer> id1 = h.get(nounA);
+        ArrayList<Integer> id2 = h.get(nounB);
+        sap = new SAP(dg);
+        // System.out.println(id1);
+        // System.out.println(id2);
+        int ans = sap.ancestor(id1, id2);
+        return h2.get(ans);
     }
 }

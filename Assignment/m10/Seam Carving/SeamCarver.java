@@ -3,12 +3,17 @@ public class SeamCarver {
 	private Picture picture;
 	// create a seam carver object based on the given picture
 	public SeamCarver(Picture picture) {
+		if (picture == null) {
+			throw new IllegalArgumentException("picture is null");
+		}
 		this.picture = picture;
 	}
+
 	// current picture
 	public Picture picture() {
 		return picture;
 	}
+
 	// width of current picture
 	public int width() {
 		return picture.width();
@@ -23,6 +28,14 @@ public class SeamCarver {
 	public double energy(int x, int y) {
 		return 0;
 	}
+
+	/*private void calculateEnergies() {
+		for (int i = 0; i < this.width(); i++) {
+			for (int j = 0; j < this.height(); j++) {
+				energies[i][j] = energy(i, j);
+			}
+		}
+	}*/
 
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {

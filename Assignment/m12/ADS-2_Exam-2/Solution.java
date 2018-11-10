@@ -61,6 +61,21 @@ public final class Solution {
       // third is the destination.
       // If the path exists print the distance between them.
       // Other wise print "No Path Found."
+      /*String[] tokens = scan.nextLine().split(" ");
+      int i = Integer.parseInt(tokens[0]);
+      int j = Integer.parseInt(tokens[1]);
+      int k = Integer.parseInt(tokens[2]);
+      DijkstraUndirectedSP dij =
+        new DijkstraUndirectedSP(graph, i);
+      if (dij.hasPathTo(j)) {
+        System.out.println(dij.distTo(j));
+        if (dij.hasPathTo(k)) {
+          System.out.println(dij.distTo(k));
+        }
+      } else {*/
+      //}
+      System.out.println("No Path Found.");
+
 
       break;
 

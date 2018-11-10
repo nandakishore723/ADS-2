@@ -1,105 +1,102 @@
-/**.
- * medge weighted graph
- * Complexity is O(N)
+/**
+ * Class for edge weighted graph.
  */
-class EdgeWeightedGraph {
-    /**.
-     * newline variable
-     */
-    private static final String NEWLINE = System.getProperty("line.separator");
-    /**.
-     * variable for vertices
+public class EdgeWeightedGraph {
+    /**
+     * {Vertices}.
      */
     private int vertices;
-    /**.
-     * variable for edges
+    /**
+     * {Edges}.
      */
     private int edges;
-    /**.
-     * variable fo bag
+    /**
+     * { item_description }.
+     */
+    private String newLine = System.getProperty("line.separator");
+    /**
+     * {Bag array of type Edge}.
      */
     private Bag<Edge>[] adj;
-    /**.
-     * constructor
-     * Complexity is O(N)
-     *
-     * @param      ver   The version
+
+    /**
+     * Initializes an empty edge-weighted graph with {@code v}
+     * vertices and 0 edges.
+     * @param  v the number of vertices
+     * @throws IllegalArgumentException if {@code v < 0}
      */
-    EdgeWeightedGraph(final int ver) {
-        this.vertices = ver;
+    public EdgeWeightedGraph(final int v) {
+        this.vertices = v;
         this.edges = 0;
-        adj = (Bag<Edge>[]) new Bag[vertices];
-        for (int i = 0; i < vertices; i++) {
+        adj = (Bag<Edge>[]) new Bag[v];
+        for (int i = 0; i < v; i++) {
             adj[i] = new Bag<Edge>();
         }
     }
-    /**.
-     * method to return the vertices count
-     * Complexity is O(1)
+    /**
+     * Returns the number of vertices in this edge-weighted graph.
      *
-     * @return     { int }
+     * @return the number of vertices in this edge-weighted graph
      */
     public int vertices() {
         return this.vertices;
     }
-    /**.
-     * method to return the edges count
-     * Complexity is O(1)
+
+    /**
+     * Returns the number of edges in this edge-weighted graph.
      *
-     * @return     { int }
+     * @return the number of edges in this edge-weighted graph
      */
-    public int noOfEdges() {
+    public int edge() {
         return this.edges;
     }
-    /**.
-     * method to add the edge
-     * Complexity is O(1)
+
+    /**
+     * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
-     * @param      e     { Edge }
+     * @param  e the edge
      */
     public void addEdge(final Edge e) {
-        int first = e.either();
-        int sec = e.other(first);
-        adj[first].add(e);
-        adj[sec].add(e);
+        int v = e.either();
+        int w = e.other(v);
+        adj[v].add(e);
+        adj[w].add(e);
         edges++;
     }
-    /**.
-     * Iterable adj
-     * Complexity is O(1)
+
+    /**
+     * Returns the edges incident on vertex {@code v}.
      *
-     * @param      v     { int }
-     *
-     * @return     { Iterator }
+     * @param  v the vertex
+     * @return the edges incident on vertex {@code v}
      */
     public Iterable<Edge> adj(final int v) {
         return adj[v];
     }
-    /**.
-     * degree method
-     * Complexity is O(1)
+
+    /**
+     * Returns the degree of vertex {@code v}.
      *
-     * @param      ver   The version
-     *
-     * @return     { int }
+     * @param  v the vertex
+     * @return the degree of vertex {@code v}
      */
-    public int degree(final int ver) {
-        return this.adj[ver].size();
+    public int degree(final int v) {
+        return adj[v].size();
     }
-    /**.
-     * Iterable method for edges
-     * Complexity is O(N^2)
+
+    /**
+     * Returns all edges in this edge-weighted graph.
      *
-     * @return     { Iterator }
+     * @return all edges in this edge-weighted graph, as an iterable
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < vertices; v++) {
+        for (int j = 0; j < vertices; j++) {
             int selfLoops = 0;
-            for (Edge e : adj(v)) {
-                if (e.other(v) > v) {
+            for (Edge e : adj(j)) {
+                if (e.other(j) > j) {
                     list.add(e);
-                } else if (e.other(v) == v) {
+                } else if (e.other(j) == j) {
                     if (selfLoops % 2 == 0) {
                         list.add(e);
                     }
@@ -109,22 +106,21 @@ class EdgeWeightedGraph {
         }
         return list;
     }
-    /**.
-     * method to print the objects
-     * Complexity is O(N^2)
+    /**
+     * Returns a string representation of the object.
      *
      * @return     String representation of the object.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertices + " " + edges + NEWLINE);
+        s.append(vertices + " vertices " + edges + " edges" + newLine);
         for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {
                 s.append(e + "  ");
             }
-            s.append(NEWLINE);
+            s.append(newLine);
         }
-        return s.toString();
+        return s.toString() + "\n";
     }
 }

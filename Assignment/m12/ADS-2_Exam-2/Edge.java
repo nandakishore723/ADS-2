@@ -1,73 +1,109 @@
-/**.
- * Edge class
- * Complexty is O(1)
+/**
+ * Class for edge.
  */
-class Edge implements Comparable<Edge> {
-    /**.
-     * variable for first vertex
+public class Edge implements Comparable<Edge> {
+    /**
+     * vertex 1.
      */
-    private int firstVertex;
-    /**.
-     * variable for sedcond vertex
+    private final int v;
+    /**
+     * vertex 2.
      */
-    private int secondVertex;
-    /**.
-     * variable for weight
+    private final int w;
+    /**
+     * weight.
      */
-    private Double weight;
-    /**.
-     * constructor
+    private final double weight;
+
+    /**
+     * Initializes an edge between vertices {@code v} and {@code w} of
+     * the given {@code weight}.
      *
-     * @param      v     { of type int }
-     * @param      w     { of type int }
-     * @param      wei   The wei of type dounle
+     * @param  v1 one vertex
+     * @param  w1 the other vertex
+     * @param  weight1 the weight of this edge
+     * @throws IllegalArgumentException if either {@code v} or {@code w}
+     *         is a negative integer
+     * @throws IllegalArgumentException if {@code weight} is {@code NaN}
      */
-    Edge(final int v, final int w, final Double wei) {
-        this.firstVertex = v;
-        this.secondVertex = w;
-        this.weight = wei;
+    public Edge(final int v1, final int w1, final double weight1) {
+        if (v1 < 0) {
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
+        }
+        if (w1 < 0) {
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
+        }
+        if (Double.isNaN(weight1)) {
+            throw new IllegalArgumentException("Weight is NaN");
+        }
+        this.v = v1;
+        this.w = w1;
+        this.weight = weight1;
     }
-    /**.
-     * method to return the weight
-     * complexity is O(1)
+
+    /**
+     * Returns the weight of this edge.
      *
-     * @return     { Double }
+     * @return the weight of this edge
      */
-    public Double weight() {
-        return this.weight;
+    public double weight() {
+        return weight;
     }
-    /**.
-     * either method to return one vertex
-     * complexity is O(1)
+
+    /**
+     * Returns either endpoint of this edge.
      *
-     * @return     { int }
+     * @return either endpoint of this edge
      */
     public int either() {
-        return firstVertex;
+        return v;
     }
-    /**.
-     * other method to find the other vertex
-     * complexity is O(1)
+
+    /**
+     * Returns the endpoint of this
+     * edge that is different from the given vertex.
      *
-     * @param      v     { of type int }
-     *
-     * @return     { int }
+     * @param  vertex one endpoint of this edge
+     * @return the other endpoint of this edge
+     * @throws IllegalArgumentException if the vertex is not one of the
+     *         endpoints of this edge
      */
-    public int other(final int v) {
-        if (firstVertex == v) {
-            return secondVertex;
+    public int other(final int vertex) {
+        if      (vertex == v) {
+            return w;
+        } else if (vertex == w) {
+            return v;
+        } else {
+            throw new IllegalArgumentException("Illegal endpoint");
         }
-        return firstVertex;
     }
-    /**.
-     * method to compare the two Edge objects
-     * complexity is O(1)
+
+    /**
+     * Compares two edges by weight.
+     * Note that {@code compareTo()} is not consistent with {@code equals()},
+     * which uses the reference equality
+     * implementation inherited from {@code Object}.
      *
-     * @param      that  The that
-     *
-     * @return     { int }
+     * @param  that the other edge
+     * @return a negative integer, zero,
+     * or positive integer depending on whether
+     *         the weight of this is less than, equal to, or greater than the
+     *         argument edge
      */
+    @Override
     public int compareTo(final Edge that) {
-        return this.weight().compareTo(that.weight());
+        return Double.compare(this.weight, that.weight);
     }
+
+    /**
+     * Returns a string representation of this edge.
+     *
+     * @return a string representation of this edge
+     */
+    public String toString() {
+        return String.format("%d-%d %.5f", v, w, weight);
+    }
+
 }

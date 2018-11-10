@@ -37,13 +37,23 @@ public final class Solution {
       System.out.println(graph);
       break;
 
-    /*case "DirectedPaths":
+    case "DirectedPaths":
       // Handle the case of DirectedPaths, where two integers are given.
       // First is the source and second is the destination.
       // If the path exists print the distance between them.
       // Other wise print "No Path Found."
-
+      String[] tokens = scan.nextLine().split(" ");
+      int i = Integer.parseInt(tokens[0]);
+      int j = Integer.parseInt(tokens[1]);
+      DijkstraUndirectedSP dj =
+        new DijkstraUndirectedSP(graph, i);
+      if (dj.hasPathTo(j)) {
+        System.out.println(dj.distTo(j));
+      } else {
+        System.out.println("No Path Found.");
+      }
       break;
+
     case "ViaPaths":
       // Handle the case of ViaPaths, where three integers are given.
       // First is the source and second is the via is
@@ -52,7 +62,7 @@ public final class Solution {
       // If the path exists print the distance between them.
       // Other wise print "No Path Found."
 
-      break;*/
+      break;
 
     default:
       break;

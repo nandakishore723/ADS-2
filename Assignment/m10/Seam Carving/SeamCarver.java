@@ -79,7 +79,7 @@ public class SeamCarver {
     }
 
     /**
-     * // energy of pixel at column x and row y not on boarder
+     * energy of pixel at column x and row y not on boarder.
      *
      * @param      x  integer
      * @param      y  integer
@@ -287,9 +287,10 @@ public class SeamCarver {
             return false;
         }
         for (int i = 1; i < len; i++) {
-            if (a[i] < Math.max(0, a[i - 1] - 1) ||
-                    a[i] > Math.min(range, a[i - 1] + 1))
+            if (a[i] < Math.max(0, a[i - 1] - 1)
+                    || a[i] > Math.min(range, a[i - 1] + 1)) {
                 return false;
+            }
         }
         return true;
     }

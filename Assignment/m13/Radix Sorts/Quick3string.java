@@ -11,17 +11,17 @@
  */
 
 public final class Quick3string {
-    /**
-     * { var_description }.
-     */
-    private static final int CUTOFF =  15;   // cutoff to insertion sort
 
     /**
      * Constructs the object.
      */
-    public Quick3string() {
+    Quick3string() {
         //unused
     }
+    /**
+     * { var_description }.
+     */
+    private static final int CUTOFF =  15;   // cutoff to insertion sort
 
     /**
      * Rearranges the array of strings in ascending order.

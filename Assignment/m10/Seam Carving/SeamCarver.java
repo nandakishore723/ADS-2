@@ -15,9 +15,9 @@ public class SeamCarver {
     /**
      * Constructs the object.
      *
-     * @param      picture  The picture
+     * @param      picture1  The picture
      */
-    public SeamCarver(final Picture picture) {
+    public SeamCarver(final Picture picture1) {
         if (picture == null) {
             throw new java.lang.IllegalArgumentException("picture is null");
         }
@@ -294,3 +294,5 @@ public class SeamCarver {
         return true;
     }
 }
+
+

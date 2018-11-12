@@ -222,14 +222,12 @@ Starting audit...
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:20:37: 'picture' hides a field. [HiddenField]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:81: First sentence should end with a period. [JavadocStyle]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:273: First sentence should end with a period. [JavadocStyle]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:290: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:290:50: '||' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\ShowEnergy.java:15: Missing a Javadoc comment. [JavadocType]

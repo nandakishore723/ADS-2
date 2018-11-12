@@ -13,7 +13,7 @@ public final class Solution {
 		Scanner scan = new Scanner(System.in);
 		Quick3string q3s = new Quick3string();
 		int n = Integer.parseInt(scan.nextLine());
-		StringBuilder sb = new StringBuilder();
+		StringBuffer sb = new StringBuffer();
 		for (int i = 0; i < n; i++) {
 			sb.append(scan.nextLine() + "::");
 		}

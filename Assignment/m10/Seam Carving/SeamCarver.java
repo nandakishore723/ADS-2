@@ -34,12 +34,17 @@ public class SeamCarver {
         return this.picture;
     }
     /**
-     * // width of current picture.
+     * width of current picture.
      *
      * @return width.
      */
 
 
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public int width() {
         return this.picture.width();
     }
@@ -47,7 +52,7 @@ public class SeamCarver {
     /**
      * // height of current picture.
      *
-     * @return height of current picture.
+     * @return     height of current picture.
      */
     public int height() {
         return this.picture.height();
@@ -56,10 +61,10 @@ public class SeamCarver {
     /**
      * // energy of pixel at column x and row y.
      *
-     * @param      x  integer.
-     * @param      y  integer.
+     * @param      x     integer.
+     * @param      y     integer.
      *
-     * @return  // energy of pixel at column x and row y.
+     * @return     // energy of pixel at column x and row y.
      */
     public  double energy(final int x, final int y) {
         int w = width() - 1, h = height() - 1;
@@ -265,7 +270,15 @@ public class SeamCarver {
         this.picture = pic;
     }
 
-    // return false if two consecutive entries differ by more than 1
+    /**
+     * return false if two consecutive entries differ by more than 1
+     *
+     * @param      a      { parameter_description }.
+     * @param      len    The length
+     * @param      range  The range
+     *
+     * @return     True if valid, False otherwise.
+     */
     private boolean isValid(final int[] a, final int len, final int range) {
         if (a == null) {
             return false;

@@ -18,7 +18,7 @@ public class SeamCarver {
     /**
      * { var_description }.
      */
-    private static final double thou = 1000.0;
+    private static final double THOU = 1000.0;
     /**
      *the constructor to initialize.
      *
@@ -173,7 +173,7 @@ public class SeamCarver {
             return indices;
         }
         for (int i = 0; i < width; i++) {
-            distTo[0][i] = thou;
+            distTo[0][i] = THOU;
         }
         // this is for relaxation.
         for (int i = 0; i < height - 1; i++) {
@@ -202,9 +202,9 @@ public class SeamCarver {
         return indices;
     }
     /**
-     *time complexity is O(W * H)
-     *W is the width of image
-     *H is the height of image
+     * time complexity is O(W * H) W is the width of image H is the height of
+     * image
+     *
      * @param      distTo  The distance to
      */
     private void reset(final double[][] distTo) {
@@ -252,7 +252,7 @@ public class SeamCarver {
     }
     // remove horizontal seam from current picture
     //time complexity is O(width * height)
-    public void removeHorizontalSeam(int[] seam) {
+    public void removeHorizontalSeam(final int[] seam) {
         //handle exceptions
         for (int col = 0; col < width; col++) {
             for (int row = seam[col]; row < height - 1; row++) {
@@ -261,9 +261,13 @@ public class SeamCarver {
         }
         height--;
     }
-    // remove vertical seam from current picture
-    //time complexity is O(width * height)
-    public void removeVerticalSeam(int[] seam) {
+    
+    /**
+     * Removes a vertical seam.
+     *
+     * @param      seam  The seam
+     */
+    public void removeVerticalSeam(final int[] seam) {
         for (int row = 0; row < height; row++) {
             for (int col = seam[row]; col < width - 1; col++) {
                 this.picture.set(col, row, this.picture.get(col + 1, row));
@@ -272,3 +276,5 @@ public class SeamCarver {
         width--;
     }
 }
+
+

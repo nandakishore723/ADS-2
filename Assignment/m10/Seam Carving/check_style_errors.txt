@@ -203,17 +203,12 @@ Starting audit...
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:21:33: Name 'thou' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:204: First sentence should end with a period. [JavadocStyle]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:255:5: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:255:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:255:38: Parameter seam should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:266:5: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:266:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:266:36: Parameter seam should be final. [FinalParameters]
+[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SeamCarver.java:264: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...

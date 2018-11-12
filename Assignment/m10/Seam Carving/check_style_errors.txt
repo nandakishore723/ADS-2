@@ -112,19 +112,10 @@ Audit done.
 Checkstyle ends with 109 errors.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:8: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:9: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:11:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:13:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:13:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:15: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:16: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:18: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:19: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:22: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:17:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:20:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:16: Line has trailing spaces. [RegexpSingleline]

@@ -10,14 +10,14 @@
  *  @author Kevin Wayne
  */
 
-public final class Quick3string {
+final class Quick3string {
 
     /**
      * Constructs the object.
      */
-    // Quick3string() {
-    //     //unused
-    // }
+    Quick3string() {
+        //unused
+    }
     /**
      * { var_description }.
      */

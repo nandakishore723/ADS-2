@@ -202,7 +202,7 @@ public class SeamCarver {
         return indices;
     }
     /**
-     * time complexity is O(W * H) W is the width of image H is the height of
+     * time complexity is O(W * H) W is the width of image H is the height of.
      * image
      *
      * @param      distTo  The distance to.

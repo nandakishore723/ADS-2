@@ -75,7 +75,7 @@ public final class StdOut {
      * { var_description }.
      */
     private static final String CHARSET_NAME = "UTF-8";
-    
+
     /**
      * { var_description }.
      */

@@ -130,8 +130,6 @@ Starting audit...
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:34:45: Parameter sc should be final. [FinalParameters]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:36: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:37: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:39: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:40: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:44:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:44:35: Parameter sc should be final. [FinalParameters]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:48:5: Missing a Javadoc comment. [JavadocMethod]
@@ -139,12 +137,7 @@ Starting audit...
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:54: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:55:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:55:43: Parameter grayValues should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:66:38: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:66:39: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:67:43: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:67:44: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:68: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:72: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:73: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:78: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:79: 'if' construct must use '{}'s. [NeedBraces]
@@ -156,12 +149,11 @@ Starting audit...
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:91:76: Parameter seamIndices should be final. [FinalParameters]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:96: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:97: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:99: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:103: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:105:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\SCUtility.java:109: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 43 errors.
+Checkstyle ends with 35 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -171,6 +163,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\StdOut.java:78: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 1 errors.

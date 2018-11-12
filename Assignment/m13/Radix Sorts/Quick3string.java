@@ -15,7 +15,7 @@ final class Quick3string {
     /**
      * Constructs the object.
      */
-    Quick3string() {
+    protected Quick3string() {
         //unused
     }
     /**

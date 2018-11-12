@@ -14,9 +14,17 @@
  */
 public final class PrintEnergy {
 
+    /**
+     * Constructs the object.
+     */
     protected PrintEnergy() {
         //unused
     }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
         StdOut.printf("image is %d pixels wide by %d pixels high.\n",
@@ -34,3 +42,5 @@ public final class PrintEnergy {
         }
     }
 }
+
+

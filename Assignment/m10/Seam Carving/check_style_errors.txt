@@ -111,11 +111,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 109 errors.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:17:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintEnergy.java:20:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:16: Line has trailing spaces. [RegexpSingleline]

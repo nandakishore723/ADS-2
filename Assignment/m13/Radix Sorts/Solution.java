@@ -19,14 +19,14 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        Quick3string q3s = new Quick3string();
+        //Quick3string q3s = new Quick3string();
         int n = Integer.parseInt(scan.nextLine());
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
             sb.append(scan.nextLine() + "::");
         }
         String[] lines = sb.toString().split("::");
-        q3s.sort(lines);
+        Quick3string.sort(lines);
         String str = "[";
         for (int i = 0; i < n; i++) {
             str += lines[i] + ", ";

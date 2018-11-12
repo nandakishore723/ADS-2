@@ -205,7 +205,7 @@ public class SeamCarver {
      * time complexity is O(W * H) W is the width of image H is the height of
      * image
      *
-     * @param      distTo  The distance to
+     * @param      distTo  The distance to.
      */
     private void reset(final double[][] distTo) {
         /**
@@ -250,8 +250,12 @@ public class SeamCarver {
             }
         }
     }
-    // remove horizontal seam from current picture
-    //time complexity is O(width * height)
+
+    /**
+     * Removes a horizontal seam.
+     *
+     * @param      seam  The seam
+     */
     public void removeHorizontalSeam(final int[] seam) {
         //handle exceptions
         for (int col = 0; col < width; col++) {
@@ -261,7 +265,7 @@ public class SeamCarver {
         }
         height--;
     }
-    
+
     /**
      * Removes a vertical seam.
      *

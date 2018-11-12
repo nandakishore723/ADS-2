@@ -16,6 +16,10 @@ public class SeamCarver {
      */
     private int height;
     /**
+     * { var_description }.
+     */
+    private static final double thou = 1000.0;
+    /**
      *the constructor to initialize.
      *
      * @param      pic   The picture
@@ -132,19 +136,21 @@ public class SeamCarver {
         int nextCol = col + 1;
         for (int i = -1; i <= 1; i++) {
             int nextRow = row + i;
-            if (nextRow < 0 || nextRow >= height) continue;
+            if (nextRow < 0 || nextRow >= height) {
+                continue;
+            }
             if (i == 0) {
-                if (distTo[nextRow][nextCol] >= distTo[row][col]  +
-                        energy(nextCol, nextRow)) {
-                    distTo[nextRow][nextCol] = distTo[row][col]  +
-                                               energy(nextCol, nextRow);
+                if (distTo[nextRow][nextCol] >= distTo[row][col]
+                        + energy(nextCol, nextRow)) {
+                    distTo[nextRow][nextCol] = distTo[row][col]
+                                               + energy(nextCol, nextRow);
                     edgeTo[nextRow][nextCol] = i;
                 }
             }
-            if (distTo[nextRow][nextCol] > distTo[row][col]  +
-                    energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col]  +
-                                           energy(nextCol, nextRow);
+            if (distTo[nextRow][nextCol] > distTo[row][col]
+                    + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col]
+                                           + energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
             }
         }
@@ -167,7 +173,7 @@ public class SeamCarver {
             return indices;
         }
         for (int i = 0; i < width; i++) {
-            distTo[0][i] = 1000.0;
+            distTo[0][i] = thou;
         }
         // this is for relaxation.
         for (int i = 0; i < height - 1; i++) {
@@ -185,7 +191,9 @@ public class SeamCarver {
                 minCol = col;
             }
         }
-        //indices values of shortest path.
+        /**
+        * indices values of shortest path.
+        */
         for (int row = height - 1, col = minCol; row >= 0; row--) {
             indices[row] = col;
             col -= edgeTo[row][col];
@@ -217,7 +225,8 @@ public class SeamCarver {
      * @param      edgeTo  The edge to
      * @param      distTo  The distance to
      */
-    private void relaxV(int row, int col, int[][] edgeTo, double[][] distTo) {
+    private void relaxV(final int row, final int col, final int[][] edgeTo,
+                        final double[][] distTo) {
         int nextRow = row + 1;
         for (int i = -1; i <= 1; i++) {
             int nextCol = col + i;
@@ -226,17 +235,17 @@ public class SeamCarver {
             }
             //spl case for bottom element.
             if (i == 0) {
-                if (distTo[nextRow][nextCol] >= distTo[row][col] +
-                        energy(nextCol, nextRow)) {
-                    distTo[nextRow][nextCol] = distTo[row][col] +
-                                               energy(nextCol, nextRow);
+                if (distTo[nextRow][nextCol] >= distTo[row][col]
+                        + energy(nextCol, nextRow)) {
+                    distTo[nextRow][nextCol] = distTo[row][col]
+                                               + energy(nextCol, nextRow);
                     edgeTo[nextRow][nextCol] = i;
                 }
             }
-            if (distTo[nextRow][nextCol] > distTo[row][col] +
-                    energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col] +
-                                           energy(nextCol, nextRow);
+            if (distTo[nextRow][nextCol] > distTo[row][col]
+                    + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col]
+                                           + energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
             }
         }

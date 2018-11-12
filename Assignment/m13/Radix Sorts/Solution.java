@@ -13,7 +13,7 @@ public final class Solution {
 		Scanner scan = new Scanner(System.in);
 		Quick3string q3s = new Quick3string();
 		int n = Integer.parseInt(scan.nextLine());
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < n; i++) {
 			sb.append(scan.nextLine() + "::");
 		}
@@ -21,7 +21,7 @@ public final class Solution {
 		q3s.sort(lines);
 		String str = "[";
 		for (int i = 0; i < n; i++) {
-			str += lines[i] + ",";
+			str += lines[i] + ", ";
 		}
 		System.out.println(str.substring(0, str.length() - 2) + "]");
 	}

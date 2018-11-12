@@ -10,7 +10,7 @@
  *  @author Kevin Wayne
  */
 
-final class Quick3string {
+public final class Quick3string {
 
     /**
      * Constructs the object.

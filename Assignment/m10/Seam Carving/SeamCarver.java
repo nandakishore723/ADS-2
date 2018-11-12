@@ -119,6 +119,14 @@ public class SeamCarver {
         }
         return indices;
     }
+    /**
+     * { function_description }.
+     *
+     * @param      row     The row
+     * @param      col     The col
+     * @param      edgeTo  The edge to
+     * @param      distTo  The distance to
+     */
     private void relaxH(final int row, final int col,
                         final int[][] edgeTo, final double[][] distTo) {
         int nextCol = col + 1;
@@ -126,13 +134,17 @@ public class SeamCarver {
             int nextRow = row + i;
             if (nextRow < 0 || nextRow >= height) continue;
             if (i == 0) {
-                if (distTo[nextRow][nextCol] >= distTo[row][col]  + energy(nextCol, nextRow)) {
-                    distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+                if (distTo[nextRow][nextCol] >= distTo[row][col]  +
+                        energy(nextCol, nextRow)) {
+                    distTo[nextRow][nextCol] = distTo[row][col]  +
+                                               energy(nextCol, nextRow);
                     edgeTo[nextRow][nextCol] = i;
                 }
             }
-            if (distTo[nextRow][nextCol] > distTo[row][col]  + energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+            if (distTo[nextRow][nextCol] > distTo[row][col]  +
+                    energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col]  +
+                                           energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
             }
         }
@@ -187,7 +199,7 @@ public class SeamCarver {
      *H is the height of image
      * @param      distTo  The distance to
      */
-    private void reset(double[][] distTo) {
+    private void reset(final double[][] distTo) {
         /**
          *reset all the values to maxvalue.
          */
@@ -197,6 +209,14 @@ public class SeamCarver {
             }
         }
     }
+    /**
+     * { function_description }.
+     *
+     * @param      row     The row
+     * @param      col     The col
+     * @param      edgeTo  The edge to
+     * @param      distTo  The distance to
+     */
     private void relaxV(int row, int col, int[][] edgeTo, double[][] distTo) {
         int nextRow = row + 1;
         for (int i = -1; i <= 1; i++) {
@@ -206,13 +226,17 @@ public class SeamCarver {
             }
             //spl case for bottom element.
             if (i == 0) {
-                if (distTo[nextRow][nextCol] >= distTo[row][col] + energy(nextCol, nextRow)) {
-                    distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
+                if (distTo[nextRow][nextCol] >= distTo[row][col] +
+                        energy(nextCol, nextRow)) {
+                    distTo[nextRow][nextCol] = distTo[row][col] +
+                                               energy(nextCol, nextRow);
                     edgeTo[nextRow][nextCol] = i;
                 }
             }
-            if (distTo[nextRow][nextCol] > distTo[row][col] + energy(nextCol, nextRow)) {
-                distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
+            if (distTo[nextRow][nextCol] > distTo[row][col] +
+                    energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col] +
+                                           energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
             }
         }

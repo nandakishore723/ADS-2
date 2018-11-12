@@ -71,14 +71,19 @@ public final class StdOut {
     private StdOut() {
 
     }
-
-    // force Unicode UTF-8 encoding; otherwise it's system dependent
+    /**
+     * { var_description }.
+     */
     private static final String CHARSET_NAME = "UTF-8";
-
-    // assume language = English, country = US for consistency with StdIn
+    
+    /**
+     * { var_description }.
+     */
     private static final Locale LOCALE = Locale.US;
 
-    // send output here
+    /**
+     * { var_description }.
+     */
     private static PrintWriter out;
 
     // this is called before invoking any methods
@@ -319,3 +324,5 @@ public final class StdOut {
         out.flush();
     }
 }
+
+

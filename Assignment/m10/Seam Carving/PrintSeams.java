@@ -45,9 +45,22 @@ public final class PrintSeams {
     protected PrintSeams() {
         //unused
     }
+    /**
+     * { var_description }.
+     */
     private static final boolean HORIZONTAL = true;
+    /**
+     * { var_description }.
+     */
     private static final boolean VERTICAL = false;
 
+    /**
+     * { function_description }.
+     *
+     * @param      carver     The carver
+     * @param      seam       The seam
+     * @param      direction  The direction
+     */
     private static void printSeam(final SeamCarver carver,
                                   final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
@@ -56,8 +69,8 @@ public final class PrintSeams {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
                 String marker = " ";
-                if ((direction == HORIZONTAL && row == seam[col]) ||
-                        (direction == VERTICAL && col == seam[row])) {
+                if ((direction == HORIZONTAL && row == seam[col])
+                        || (direction == VERTICAL && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -71,7 +84,12 @@ public final class PrintSeams {
         StdOut.println();
     }
 
-    public static void main(String[] args) {
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
         StdOut.printf("%s (%d-by-%d image)\n", args[0],
                       picture.width(), picture.height());
@@ -79,8 +97,8 @@ public final class PrintSeams {
         StdOut.println(
             "The table gives the dual-gradient energies of each pixel.");
         StdOut.println(
-            "The asterisks denote a minimum" +
-            "energy vertical or horizontal seam.");
+            "The asterisks denote a minimum"
+            + "energy vertical or horizontal seam.");
         StdOut.println();
 
         SeamCarver carver = new SeamCarver(picture);

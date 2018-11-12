@@ -113,15 +113,7 @@ Checkstyle ends with 109 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:48:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:49:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:51:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:59:67: '||' should be on a new line. [OperatorWrap]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:74:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:74:29: Parameter args should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m10\Seam Carving\PrintSeams.java:82:46: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
 Starting audit...

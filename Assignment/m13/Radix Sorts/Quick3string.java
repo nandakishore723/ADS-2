@@ -11,11 +11,14 @@
  */
 
 public final class Quick3string {
+    /**
+     * { var_description }.
+     */
     private static final int CUTOFF =  15;   // cutoff to insertion sort
 
-    //
-    // do not instantiate.
-    //
+    /**
+     * Constructs the object.
+     */
     Quick3string() {
         //unused
     }

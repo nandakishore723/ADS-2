@@ -19,7 +19,7 @@ public final class Quick3string {
     /**
      * Constructs the object.
      */
-    Quick3string() {
+    public Quick3string() {
         //unused
     }
 
@@ -88,7 +88,9 @@ public final class Quick3string {
         * a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi].
         */
         sort(a, lo, lt - 1, d);
-        if (v >= 0) sort(a, lt, gt, d + 1);
+        if (v >= 0) {
+            sort(a, lt, gt, d + 1);
+        }
         sort(a, gt + 1, hi, d);
     }
 

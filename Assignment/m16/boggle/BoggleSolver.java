@@ -25,8 +25,8 @@ public class BoggleSolver {
             } else {
                 score = 11;
             }
+            System.out.println("board is null");
         }
-        System.out.println("board is null");
     }
 
     // Returns the set of all valid words in the given Boggle board, as an Iterable.

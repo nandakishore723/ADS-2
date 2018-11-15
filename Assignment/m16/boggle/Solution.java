@@ -46,15 +46,12 @@ public class Solution {
 				for (String word : solver.getAllValidWords(board)) {
 					score += solver.scoreOf(word);
 				}
-				if (board == null) {
-					System.out.println("board is null");
-				} else {
-					StdOut.println("Score = " + score);
-				}
+				StdOut.println("Score = " + score);
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
 			}
 			break;
 		}
+
 	}
 }

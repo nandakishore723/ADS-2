@@ -38,6 +38,9 @@ public class BoggleSolver {
      * @return     All valid words.
      */
     public Iterable<String> getAllValidWords(BoggleBoard board) {
+        if (board == null) {
+            throw new IllegalArgumentException("board is null");
+        }
         return new Bag<String>();
     }
 

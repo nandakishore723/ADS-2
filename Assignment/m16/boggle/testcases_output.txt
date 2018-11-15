@@ -3,6 +3,7 @@ Expected Output:
 Score = 33
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -11,6 +12,7 @@ Expected Output:
 Score = 84
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -19,6 +21,7 @@ Expected Output:
 Score = 1
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -27,6 +30,7 @@ Expected Output:
 Score = 2
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -35,6 +39,7 @@ Expected Output:
 Score = 3
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -43,6 +48,7 @@ Expected Output:
 Score = 1000
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -51,6 +57,7 @@ Expected Output:
 Score = 400
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -59,6 +66,7 @@ Expected Output:
 Score = 7
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -67,6 +75,7 @@ Expected Output:
 Score = 155
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -75,6 +84,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -83,6 +93,7 @@ Expected Output:
 Score = 68
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -91,6 +102,7 @@ Expected Output:
 Score = 147
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -99,14 +111,16 @@ Expected Output:
 Score = 687
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
-########## Testcase 13: Passed ##########
+########## Testcase 13: Failed ##########
 Expected Output: 
 Score = 0
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -115,6 +129,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -123,6 +138,7 @@ Expected Output:
 Score = 129
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -131,6 +147,7 @@ Expected Output:
 Score = 2
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -139,6 +156,7 @@ Expected Output:
 Score = 1
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -147,6 +165,7 @@ Expected Output:
 Score = 14
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -155,6 +174,7 @@ Expected Output:
 Score = 11
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -163,6 +183,7 @@ Expected Output:
 Score = 33
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -171,6 +192,7 @@ Expected Output:
 Score = 23
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -179,6 +201,7 @@ Expected Output:
 Score = 24
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -187,14 +210,16 @@ Expected Output:
 Score = 30
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
-########## Testcase 24: Passed ##########
+########## Testcase 24: Failed ##########
 Expected Output: 
 Score = 0
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -203,6 +228,7 @@ Expected Output:
 Score = 26539
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -211,6 +237,7 @@ Expected Output:
 Score = 19797
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -219,6 +246,7 @@ Expected Output:
 Score = 27325
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 
@@ -227,6 +255,7 @@ Expected Output:
 Score = 32175
 
 Your Output: 
+board is null
 Score = 0
 ----------------------------------------
 

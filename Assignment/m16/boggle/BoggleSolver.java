@@ -12,7 +12,7 @@ public class BoggleSolver {
     public BoggleSolver(String[] dictionary) {
         int score;
         for (int i = 0; i < dictionary.length; i++) {
-            if (dictionary[i].length() == 2 || dictionary[i].length() == 1) {
+            if (dictionary[i].length() >= 2) {
                 score = 0;
             } else if (dictionary[i].length() == 3 || dictionary[i].length() == 4) {
                 score = 1;
@@ -26,6 +26,7 @@ public class BoggleSolver {
                 score = 11;
             }
         }
+        System.out.println("board is null");
     }
 
     // Returns the set of all valid words in the given Boggle board, as an Iterable.
@@ -38,9 +39,6 @@ public class BoggleSolver {
      * @return     All valid words.
      */
     public Iterable<String> getAllValidWords(BoggleBoard board) {
-        if (board == null) {
-            System.out.println("board is null");
-        }
         return new Bag<String>();
     }
 

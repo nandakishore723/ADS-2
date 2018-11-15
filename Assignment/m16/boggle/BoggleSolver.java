@@ -25,7 +25,6 @@ public class BoggleSolver {
             } else {
                 score = 11;
             }
-            System.out.println("board is null");
         }
     }
 

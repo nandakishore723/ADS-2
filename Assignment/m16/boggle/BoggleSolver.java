@@ -12,7 +12,7 @@ public class BoggleSolver {
     public BoggleSolver(String[] dictionary) {
         int score;
         for (int i = 0; i < dictionary.length; i++) {
-            if (dictionary[i].length() <= 2) {
+            if (dictionary[i].length() == 2 || dictionary[i].length() == 1 || dictionary[i].length() == 0) {
                 score = 0;
             } else if (dictionary[i].length() == 3 || dictionary[i].length() == 4) {
                 score = 1;

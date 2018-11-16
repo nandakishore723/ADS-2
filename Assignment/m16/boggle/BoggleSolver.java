@@ -1,3 +1,5 @@
+import java.util.TreeSet;
+import java.util.Set;
 /**
  * Class for boggle solver.
  */
@@ -7,15 +9,14 @@ public class BoggleSolver {
 	 */
 	TrieST<Integer>tri = new TrieST<Integer>();
 
-	// Initializes the data structure using the given array of strings as the dictionary.
-	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
+	private boolean[][] marked;
 
 	/**
 	 * Constructs the object.
 	 *
 	 * @param      dictionary  The dictionary.
 	 */
-	public BoggleSolver(String[] dictionary) {
+	public BoggleSolver(final String[] dictionary) {
 		int score;
 		for (int i = 0; i < dictionary.length; i++) {
 			if (dictionary[i].length() == 3 || dictionary[i].length() == 4) {
@@ -43,15 +44,47 @@ public class BoggleSolver {
 	 *
 	 * @return     All valid words.
 	 */
-	public Iterable<String> getAllValidWords(BoggleBoard board) {
+	public Iterable<String> getAllValidWords(final BoggleBoard board) {
 		if (board == null) {
 			throw new IllegalArgumentException("board is null");
 		}
 		return new Bag<String>();
 	}
 
-	// Returns the score of the given word if it is in the dictionary, zero otherwise.
-	// (You can assume the word contains only the uppercase letters A through Z.)
+	private boolean isVaildWord(final String word) {
+		if (word.length() < 3) {
+			return false;
+		}
+		return tri.contains(word);
+	}
+
+	private String appendCharacter(String ac, char c) {
+		if (c == 'Q') {
+			ac += "QU";
+			return ac;
+		} else {
+			ac += c;
+			return ac;
+		}
+	}
+
+	/**
+	 * { function_description }.
+	 *
+	 * @param      board   The board
+	 * @param      marked  The marked
+	 * @param      rows    The rows
+	 * @param      cols    The cols
+	 * @param      word    The word
+	 */
+	/*public void dfs(final BoggleBoard board, final boolean[][] marked,
+	                final int rows, final int cols, final String word) {
+
+	}*/
+
+	/*private boolean isValidRowColumn(final int row, final int col,
+	                                 final BoggleBoard board) {
+	}*/
 
 	/**
 	 * { function_description }.
@@ -61,7 +94,7 @@ public class BoggleSolver {
 	 * @return     { description_of_the_return_value }
 	 */
 	public int scoreOf(String word) {
-		if (tri.contains(word) == true) {
+		if (tri.contains(word)) {
 			return tri.get(word);
 		}
 		return 0;

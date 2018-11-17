@@ -63,7 +63,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
      * { item_description }.
      */
-    private final static int FOUR = 4;
+    private static final int FOUR = 4;
     /**
      * Initializes an empty symbol table.
      */

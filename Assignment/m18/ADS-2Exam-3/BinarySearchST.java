@@ -63,7 +63,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
      * { item_description }.
      */
-    private final static int four = 4;
+    private final static int FOUR = 4;
     /**
      * Initializes an empty symbol table.
      */
@@ -273,7 +273,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         vals[n] = null;
 
         // resize if 1/4 full
-        if (n > 0 && n == keys.length / four) {
+        if (n > 0 && n == keys.length / FOUR) {
             resize(keys.length / 2);
         }
 
@@ -455,7 +455,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      *
      * @return     all keys in this symbol table between {@code lo} (inclusive)
      *             and {@code hi} (inclusive)
-     * @throws     IllegalArgumentException  if either {@code lo} or 
+     * @throws     IllegalArgumentException  if either {@code lo} or
      * {@code hi} is
      *                                       {@code null}.
      */
@@ -533,3 +533,5 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         return true;
     }
 }
+
+

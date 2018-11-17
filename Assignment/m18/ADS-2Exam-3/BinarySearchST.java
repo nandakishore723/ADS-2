@@ -60,7 +60,10 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      * { var_description }.
      */
     private int n = 0;
-
+    /**
+     * { item_description }.
+     */
+    private final static int four = 4;
     /**
      * Initializes an empty symbol table.
      */
@@ -129,7 +132,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public boolean contains(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         }
         return get(key) != null;
     }
@@ -203,7 +207,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public void put(final Key key, final Value val)  {
         if (key == null) {
-            throw new IllegalArgumentException("first argument to put() is null");
+            throw new IllegalArgumentException(
+                "first argument to put() is null");
         }
 
         if (val == null) {
@@ -268,7 +273,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         vals[n] = null;
 
         // resize if 1/4 full
-        if (n > 0 && n == keys.length / 4) {
+        if (n > 0 && n == keys.length / four) {
             resize(keys.length / 2);
         }
 

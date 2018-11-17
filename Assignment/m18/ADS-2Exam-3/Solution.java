@@ -1,17 +1,30 @@
 import java.util.Scanner;
 
-
+/**
+ * Class for solution.
+ */
 public class Solution {
 
+    private Solution() {
+        //unused
+    }
+
     // Don't modify this method.
-    public static void main(String[] args) {
+
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
 
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+            BinarySearchST<String, Integer> hash = loadDictionary(
+                    "/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -80,11 +93,26 @@ public class Solution {
     }
 
     // Don't modify this method.
+
+    /**
+     * { function_description }.
+     *
+     * @param      file  The file
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public static String[] toReadFile(String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
 
+    /**
+     * Loads a dictionary.
+     *
+     * @param      file  The file.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public static BinarySearchST<String, Integer> loadDictionary(String file) {
         BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
         // your code goes here
@@ -94,24 +122,56 @@ public class Solution {
 
 }
 
+/**
+ * Class for t 9.
+ */
 class T9 {
 
+    /**
+     * Constructs the object.
+     *
+     * @param      st    { parameter_description }.
+     */
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
     }
 
     // get all the prefixes that match with given prefix.
+
+    /**
+     * Gets all words.
+     *
+     * @param      prefix  The prefix.
+     *
+     * @return     All words.
+     */
     public Iterable<String> getAllWords(String prefix) {
         // your code goes here
         return null;
     }
 
+    /**
+     * { function_description }.
+     *
+     * @param      t9Signature  The t 9 signature.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public Iterable<String> potentialWords(String t9Signature) {
         // your code goes here
         return null;
     }
 
     // return all possibilities(words), find top k with highest frequency.
+
+    /**
+     * Gets the suggestions.
+     *
+     * @param      words  The words.
+     * @param      k      { parameter_description }.
+     *
+     * @return     The suggestions.
+     */
     public Iterable<String> getSuggestions(Iterable<String> words, int k) {
         // your code goes here
         return null;
@@ -119,6 +179,15 @@ class T9 {
 
     // final output
     // Don't modify this method.
+
+    /**
+     * { function_description }.
+     *
+     * @param      t9Signature  The t 9 signature.
+     * @param      k            { parameter_description }.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public Iterable<String> t9(String t9Signature, int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }

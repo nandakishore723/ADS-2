@@ -4,17 +4,9 @@ Starting audit...
 [ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:66:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
 [ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:66:30: Name 'four' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:310: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:320: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:333: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:348: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:390: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:393: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:394: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:447: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:476: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\BinarySearchST.java:458: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\In.java:59:5: Missing a Javadoc comment. [JavadocVariable]

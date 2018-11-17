@@ -305,9 +305,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
 
-    /***************************************************************************
+    /*************************************************************************
      *  Ordered symbol table methods.
-     ***************************************************************************/
+     *************************************************************************/
 
     /**
       * Returns the smallest key in this symbol table.
@@ -317,7 +317,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
       */
     public Key min() {
         if (isEmpty()) {
-            throw new NoSuchElementException("called min() with empty symbol table");
+            throw new NoSuchElementException(
+                "called min() with empty symbol table");
         }
         return keys[0];
     }
@@ -330,7 +331,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Key max() {
         if (isEmpty()) {
-            throw new NoSuchElementException("called max() with empty symbol table");
+            throw new NoSuchElementException(
+                "called max() with empty symbol table");
         }
         return keys[n - 1];
     }
@@ -345,25 +347,29 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Key select(final int k) {
         if (k < 0 || k >= size()) {
-            throw new IllegalArgumentException("called select() with invalid argument: " + k);
+            throw new IllegalArgumentException(
+                "called select() with invalid argument: " + k);
         }
         return keys[k];
     }
 
     /**
-     * Returns the largest key in this symbol table less than or equal to {@code
+     * Returns the largest key in this symbol table less than or equal to
+     * {@code
      * key}.
      *
      * @param      key   the key
      *
-     * @return     the largest key in this symbol table less than or equal to
+     * @return     the largest key in this symbol table less than or equal
+     * to
      *             {@code key}.
      * @throws     NoSuchElementException    if there is no such key
      * @throws     IllegalArgumentException  if {@code key} is {@code null}.
      */
     public Key floor(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to floor() is null");
+            throw new IllegalArgumentException(
+                "argument to floor() is null");
         }
         int i = rank(key);
         if (i < n && key.compareTo(keys[i]) == 0) {
@@ -387,11 +393,16 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws     IllegalArgumentException  if {@code key} is {@code null}.
      */
     public Key ceiling(final Key key) {
-        if (key == null) throw new IllegalArgumentException(
+        if (key == null) {
+            throw new IllegalArgumentException(
                 "argument to ceiling() is null");
+        }
         int i = rank(key);
-        if (i == n) return null;
-        else return keys[i];
+        if (i == n) {
+            return null;
+        } else {
+            return keys[i];
+        }
     }
 
     /**
@@ -444,7 +455,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      *
      * @return     all keys in this symbol table between {@code lo} (inclusive)
      *             and {@code hi} (inclusive)
-     * @throws     IllegalArgumentException  if either {@code lo} or {@code hi} is
+     * @throws     IllegalArgumentException  if either {@code lo} or 
+     * {@code hi} is
      *                                       {@code null}.
      */
     public Iterable<Key> keys(final Key lo, final  Key hi) {
@@ -471,9 +483,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
 
-    /***************************************************************************
+    /*************************************************************************
      *  Check internal invariants.
-     ***************************************************************************/
+     *************************************************************************/
 
     /**
      * { function_description }.

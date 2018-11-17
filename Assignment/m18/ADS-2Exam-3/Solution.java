@@ -125,8 +125,8 @@ public final class Solution {
         int n = array.length;
         for (int i = 0; i < n; i++) {
             String word = array[i].toLowerCase();
-            if (st.contains(word )) {
-                st.put(word , st.get(word ) + 1);
+            if (st.contains(word)) {
+                st.put(word, st.get(word) + 1);
             } else {
                 st.put(word, 1);
             }

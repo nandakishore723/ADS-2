@@ -77,7 +77,8 @@ public class TST<Value> {
      */
     public Value get(final String key) {
         if (key == null) {
-            throw new IllegalArgumentException("calls get() with null argument");
+            throw new IllegalArgumentException(
+                "calls get() with null argument");
         }
         if (key.length() == 0) {
             throw new IllegalArgumentException("key must have length >= 1");
@@ -319,7 +320,15 @@ public class TST<Value> {
             collect(x.right, prefix, i, pattern, queue);
         }
     }
-    public boolean hasPrefix(String prefix) {
+
+    /**
+     * Determines if it has prefix.
+     *
+     * @param      prefix  The prefix
+     *
+     * @return     True if has prefix, False otherwise.
+     */
+    public boolean hasPrefix(final String prefix) {
         Node<Value> prefixNode = get(root, prefix, 0);
         if (prefixNode == null) {
             return false;
@@ -327,11 +336,14 @@ public class TST<Value> {
         if (prefixNode.val != null) {
             return true;
         }
-        if (prefixNode.left == null && prefixNode.mid == null &&
-                prefixNode.right == null) {
+        if (prefixNode.left == null && prefixNode.mid == null
+                && prefixNode.right == null) {
             return false;
         }
         return true;
     }
 }
+
+
+
 

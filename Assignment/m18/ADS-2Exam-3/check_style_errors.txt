@@ -372,11 +372,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 25 errors.
 Starting audit...
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\TST.java:80: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\TST.java:322:5: Class 'TST' looks like designed for extension (can be subclassed), but the method 'hasPrefix' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TST' final or making the method 'hasPrefix' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\TST.java:322:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\TST.java:322:30: Parameter prefix should be final. [FinalParameters]
-[ERROR] D:\ADS-2\Assignment\m18\ADS-2Exam-3\TST.java:330:63: '&&' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 6 errors.

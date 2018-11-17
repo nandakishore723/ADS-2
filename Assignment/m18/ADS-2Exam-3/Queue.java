@@ -157,9 +157,9 @@ public class Queue<Item> implements Iterable<Item> {
     private Node<Item> current;
 
     /**
-     * Constructs the object.
-     * Complexity is O(N).
-     * Where N is length of the queue.
+     * Constructs the object. Complexity is O(N). Where N is length of the
+     * queue.
+     *
      * @param      first  The first
      */
     ListIterator(final Node<Item> first) {
@@ -197,3 +197,6 @@ public class Queue<Item> implements Iterable<Item> {
     }
   }
 }
+
+
+

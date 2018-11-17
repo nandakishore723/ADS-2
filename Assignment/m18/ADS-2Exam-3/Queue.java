@@ -160,10 +160,10 @@ public class Queue<Item> implements Iterable<Item> {
      * Constructs the object. Complexity is O(N). Where N is length of the
      * queue.
      *
-     * @param      first  The first
+     * @param      f  The first
      */
-    ListIterator(final Node<Item> first) {
-      current = first;
+    ListIterator(final Node<Item> f) {
+      current = f;
     }
 
     /**
